@@ -1,6 +1,7 @@
 library(shiny)
 library(tidyverse)
-library(rvc)
+# library(rvc)
+install_github("jeremiaheb/rvc")
 
 source("timeseries_density.R")
 
