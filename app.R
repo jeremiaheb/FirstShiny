@@ -31,13 +31,25 @@ ui <- fluidPage(
     mainPanel(
       tabsetPanel(
         tabPanel("Plot", 
-                 fluidRow(column(12,plotOutput("densityplot"))),
-                 fluidRow(column(6,"", plotOutput("occurrenceplot")),
-                          column(6,"", plotOutput("biomassplot"))),
-                 fluidRow(column(12,"", plotOutput("lenfreqplot")))),
-        tabPanel("Table", tableOutput("data_table"))
-      )
-    )
+                 fluidRow(
+                    column(12,plotOutput("densityplot"))
+                    ),
+                 fluidRow(
+                    column(6, plotOutput("occurrenceplot")
+                    ),
+                    column(6, plotOutput("biomassplot"))
+                    ),
+                 fluidRow(
+                    column(12, plotOutput("lenfreqplot"))
+                    )
+                 ),
+        tabPanel("Table", 
+                 fluidRow(
+                    column(12, tableOutput("data_table"))
+                 ),
+                )
+              )
+            )
   )
 )
 server <- function(input, output) {
