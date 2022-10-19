@@ -1,7 +1,7 @@
 
-drto <- readRDS("Data/drytortugas.rds")
-fkeys <- readRDS("Data/floridakeys.rds")
-sefcri <- readRDS("Data/seflorida.rds")
+drto <- readRDS("Data/dt.rds")
+fkeys <- readRDS("Data/fk.rds")
+sefcri <- readRDS("Data/se.rds")
 
 timeseries_UI <- function(id) {
   tagList(
