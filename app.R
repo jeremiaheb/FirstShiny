@@ -9,7 +9,7 @@ sapply(myFiles, source)
 
 ui <- fluidPage(
   
-  titlePanel("Tabsets"),
+  titlePanel("Fish"),
   
   sidebarLayout(
     
@@ -24,10 +24,6 @@ ui <- fluidPage(
                   "Domain",
                   c("Dry Tortugas", "Florida Keys", "SE Florida"),
                   selected = "Dry Tortugas"),
-      selectInput("metric",
-                  "Metric",
-                  c("Density", "Occurrence", "Biomass"),
-                  selected = "Density"),
       textInput("species", 
                 "Species", 
                 value = "MYC BONA", 
@@ -36,7 +32,9 @@ ui <- fluidPage(
     
     mainPanel(
       tabsetPanel(
-        tabPanel("Plot", plotOutput("timeplot")),
+        tabPanel("Plot", plotOutput("densityplot"),
+                 "", plotOutput("occurrenceplot"),
+                 "", plotOutput("biomassplot")),
         tabPanel("Table", tableOutput("data_table"))
       )
     )
@@ -56,37 +54,35 @@ server <- function(input, output) {
   
   dt <- reactiveVal()
   
-  output$timeplot <- renderPlot({
+  output$densityplot <- renderPlot({
     
-    if (input$metric == "Density"){
-      # dens <- getDomainDensity(x = dataset(), species = input$species, years = seq(input$years[1], input$years[2]))
-      # dt(dens)
-      # ggplot(dens, aes(x = YEAR, y = density)) + geom_point() + geom_line()
-      a <- plot_domain_den_by_year(dataset = dataset(), 
-                                   species = input$species, 
+    a <- plot_domain_den_by_year(dataset = dataset(), 
+                                 species = input$species, 
+                                 years = seq(input$years[1], input$years[2]),
+                                 print_dataframe = T,
+                                 title = paste(input$domain, input$species))
+    dt(a)
+  })
+  
+  output$occurrenceplot <- renderPlot({
+      a <- plot_domain_occ_by_year(dataset = dataset(),
+                                   species = input$species,
                                    years = seq(input$years[1], input$years[2]),
                                    print_dataframe = T,
                                    title = paste(input$domain, input$species))
       dt(a)
-    } else if (input$metric == "Occurrence"){
-      a <- plot_domain_occ_by_year(dataset = dataset(), 
-                                   species = input$species, 
-                                   years = seq(input$years[1], input$years[2]), 
-                                   print_dataframe = T,
-                                   title = paste(input$domain, input$species))
-      dt(a)
-    } else if (input$metric == "Biomass"){
-      a <- plot_domain_biomass_by_year(dataset = dataset(), 
-                                       species = input$species, 
-                                       years = seq(input$years[1], input$years[2]), 
+  })
+  
+  output$biomassplot <- renderPlot({
+      a <- plot_domain_biomass_by_year(dataset = dataset(),
+                                       species = input$species,
+                                       years = seq(input$years[1], input$years[2]),
                                        print_dataframe = T,
                                        title = paste(input$domain, input$species))
       dt(a)
-    }
   })
   
   output$data_table <- renderTable({
-    
     dt()
   })
 }
