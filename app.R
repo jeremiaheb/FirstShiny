@@ -2,8 +2,6 @@ library(shiny)
 library(tidyverse)
 library(rvc)
 
-
-source("timeseries_density.R")
 myFiles = list.files("Data/", pattern = "*.R", full.names = T)
 sapply(myFiles, source)
 
@@ -44,11 +42,11 @@ server <- function(input, output) {
   #dataset choice
   dataset <- reactive({
     if (input$domain == 'Dry Tortugas'){
-      return(drto)
+      return(readRDS("Data/dt.rds"))
     } else if (input$domain == 'Florida Keys') {
-      return(fkeys)
+      return(readRDS("Data/fk.rds"))
     } else if (input$domain == 'SE Florida') {
-      return(sefcri)
+      return(readRDS("Data/se.rds"))
     }
   })
   
