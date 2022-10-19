@@ -30,9 +30,11 @@ ui <- fluidPage(
     
     mainPanel(
       tabsetPanel(
-        tabPanel("Plot", plotOutput("densityplot"),
-                 "", plotOutput("occurrenceplot"),
-                 "", plotOutput("biomassplot")),
+        tabPanel("Plot", 
+                 fluidRow(column(12,plotOutput("densityplot"))),
+                 fluidRow(column(6,"", plotOutput("occurrenceplot")),
+                          column(6,"", plotOutput("biomassplot"))),
+                 fluidRow(column(12,"", plotOutput("lenfreqplot")))),
         tabPanel("Table", tableOutput("data_table"))
       )
     )
@@ -78,6 +80,13 @@ server <- function(input, output) {
                                        print_dataframe = T,
                                        title = paste(input$domain, input$species))
       dt(a)
+  })
+  
+  output$lenfreqplot <- renderPlot({
+    plot_domain_LF_by_year(data = dataset(),
+                           species = input$species, 
+                           bin_size = 5,
+                           title = paste(input$domain, input$species))
   })
   
   output$data_table <- renderTable({
