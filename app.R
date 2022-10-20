@@ -28,7 +28,7 @@ ui <- fluidPage(
         value = "MYC BONA",
         placeholder = "MYC BONA"
       ),
-      submitButton("Build Species Plots"),
+      # submitButton("Build Species Plots"),
       width = 2
     ),
     mainPanel(
@@ -36,20 +36,64 @@ ui <- fluidPage(
         tabPanel(
           "Plot",
           fluidRow(
-            column(12, withSpinner(plotOutput("densityplot"), type = 3, color.background = "white"))
+            column(
+              12,
+              withSpinner(
+                plotOutput("densityplot"),
+                type = 3,
+                color.background = "white"
+              )
+            )
           ),
           fluidRow(
-            column(6, withSpinner(plotOutput("occurrenceplot", ), type = 3, color.background = "white")),
-            column(6, withSpinner(plotOutput("biomassplot"), type = 3, color.background = "white"))
+            column(
+              6,
+              withSpinner(
+                plotOutput("occurrenceplot"),
+                type = 3,
+                color.background = "white"
+              )
+            ),
+            column(
+              6,
+              withSpinner(
+                plotOutput("biomassplot"),
+                type = 3,
+                color.background = "white"
+              )
+            )
           ),
           fluidRow(
-            column(12, withSpinner(plotOutput("lenfreqplot"), type = 3, color.background = "white"))
+            column(
+              12,
+              withSpinner(
+                plotOutput("lenfreqplot"),
+                type = 3,
+                color.background = "white"
+              )
+            )
           )
         ),
         tabPanel(
           "Table",
           fluidRow(
-            column(12, tableOutput("data_table"))
+            column(
+              2,
+              selectInput(
+                "whichMetric",
+                "Choose Metric",
+                c("densitydata", "occurrencedata", "biomassdata"),
+                selected = "densitydata"
+              )
+            ),
+            column(
+              10,
+              withSpinner(
+                tableOutput("data_table"),
+                type = 3,
+                color.background = "white"
+              )
+            )
           ),
         )
       )
@@ -69,7 +113,7 @@ server <- function(input, output) {
     }
   })
 
-  dt <- reactiveVal()
+  dt <- reactiveValues()
 
   output$densityplot <- renderPlot({
     a <- plot_domain_den_by_year(
@@ -79,7 +123,7 @@ server <- function(input, output) {
       print_dataframe = T,
       title = paste(input$domain, input$species)
     )
-    dt(a)
+    dt$densitydata <- a
   })
 
   output$occurrenceplot <- renderPlot({
@@ -90,7 +134,7 @@ server <- function(input, output) {
       print_dataframe = T,
       title = paste(input$domain, input$species)
     )
-    dt(a)
+    dt$occurrencedata <- a
   })
 
   output$biomassplot <- renderPlot({
@@ -101,7 +145,7 @@ server <- function(input, output) {
       print_dataframe = T,
       title = paste(input$domain, input$species)
     )
-    dt(a)
+    dt$biomassdata <- a
   })
 
   output$lenfreqplot <- renderPlot({
@@ -114,7 +158,10 @@ server <- function(input, output) {
   })
 
   output$data_table <- renderTable({
-    dt()
+    observeEvent(input$whichMetric, {
+      dt[[input$whichMetric]]
+    })
+    dt[[input$whichMetric]]
   })
 }
 shinyApp(ui, server)
