@@ -18,9 +18,9 @@ plot_domain_den_by_year <- function(dataset, species, years, title = NULL, print
   ifelse(isTRUE(print_dataframe), print(list(a,p)), print(p))
 }
 
-plot_domain_den_by_year_by_prot <- function(dataset, species, title = NULL, print_dataframe = FALSE) {
+plot_domain_den_by_year_by_prot <- function(dataset, species, years, title = NULL, print_dataframe = FALSE) {
   
-  a <-  getDomainDensity(dataset, species, merge_protected = F) %>%
+  a <-  getDomainDensity(dataset, species, years, merge_protected = F) %>%
     filter(!protected_status == "all") %>%
     mutate( SE   = sqrt(var),
             YEAR = as_factor(YEAR),
