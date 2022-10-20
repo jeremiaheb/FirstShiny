@@ -82,9 +82,10 @@ ui <- fluidPage(
               selectInput(
                 "whichMetric",
                 "Choose Metric",
-                c("densitydata", "occurrencedata", "biomassdata"),
+                c("Density" = "densitydata", "Occurrence" = "occurrencedata", "Biomass" = "biomassdata"),
                 selected = "densitydata"
-              )
+              ),
+              downloadButton("downloadData", "Download"),
             ),
             column(
               10,
@@ -163,5 +164,14 @@ server <- function(input, output) {
     })
     dt[[input$whichMetric]]
   })
+
+  output$downloadData <- downloadHandler(
+    filename = function() {
+      paste(input$whichMetric, ".csv", sep = "")
+    },
+    content = function(file) {
+      write.csv(dt[[input$whichMetric]], file, row.names = FALSE)
+    }
+  )
 }
 shinyApp(ui, server)
