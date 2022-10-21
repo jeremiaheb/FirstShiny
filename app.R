@@ -168,7 +168,7 @@ server <- function(input, output) {
 
   output$downloadData <- downloadHandler(
     filename = function() {
-      paste(input$whichMetric, ".csv", sep = "")
+      paste(input$domain, "_",input$species,"_",input$whichMetric, ".csv", sep = "")
     },
     content = function(file) {
       write.csv(dt[[input$whichMetric]], file, row.names = FALSE)
