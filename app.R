@@ -2,13 +2,14 @@ library(shiny)
 library(tidyverse)
 library(rvc)
 library(shinycssloaders)
+library(shinythemes)
 
 
 myFiles <- list.files("plots/", pattern = "*.R", full.names = T)
 sapply(myFiles, source)
 species <- read.csv("Data/speciesList.csv")
 
-ui <- fluidPage(
+ui <- fluidPage(theme = shinytheme("yeti"),
   titlePanel("Fish"),
   sidebarLayout(
     sidebarPanel(
