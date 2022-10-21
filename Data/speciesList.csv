@@ -1,0 +1,485 @@
+SPECIES_CD,SCIENTIFIC_NAME,COMMON_NAME,search_name
+ABL HIAN,Ablennes hians,flat needlefish,ABL HIAN Ablennes hians flat needlefish
+ABU SAXA,Abudefduf saxatilis,sergeant major,ABU SAXA Abudefduf saxatilis sergeant major
+ABU TAUR,Abudefduf taurus,night sergeant,ABU TAUR Abudefduf taurus night sergeant
+ACA ASPE,Acanthemblemaria aspera,roughhead blenny,ACA ASPE Acanthemblemaria aspera roughhead blenny
+ACA BAHI,Acanthurus bahianus,ocean surgeon,ACA BAHI Acanthurus bahianus ocean surgeon
+ACA CHAP,Acanthemblemaria chaplini,papillose blenny,ACA CHAP Acanthemblemaria chaplini papillose blenny
+ACA CHIR,Acanthurus chirurgus,doctorfish,ACA CHIR Acanthurus chirurgus doctorfish
+ACA COER,Acanthurus coeruleus,blue tang,ACA COER Acanthurus coeruleus blue tang
+ACA MARI,Acanthemblemaria maria,secretary blenny,ACA MARI Acanthemblemaria maria secretary blenny
+ACA POLY,Acanthostracion polygonia,honeycomb cowfish,ACA POLY Acanthostracion polygonia honeycomb cowfish
+ACA QUAD,Acanthostracion quadricornis,scrawled cowfish,ACA QUAD Acanthostracion quadricornis scrawled cowfish
+ACA SOLA,Acanthocybium solandri,wahoo,ACA SOLA Acanthocybium solandri wahoo
+ACA SPE.,Acanthurus sp.,surgeonfish species,ACA SPE. Acanthurus sp. surgeonfish species
+ACA SPIN,Acanthemblemaria spinosa,spinyhead blenny,ACA SPIN Acanthemblemaria spinosa spinyhead blenny
+ACE DEND,Acentronura dendritica,pipehorse,ACE DEND Acentronura dendritica pipehorse
+ACN SPE.,Acanthemblemaria species,tube blenny Acanthemblemaria,ACN SPE. Acanthemblemaria species tube blenny Acanthemblemaria
+AET NARI,Aetobatus narinari,spotted eagle ray,AET NARI Aetobatus narinari spotted eagle ray
+AHL EGMO,Ahlia egmontis,key worm eel,AHL EGMO Ahlia egmontis key worm eel
+ALB VULP,Albula vulpes,bonefish,ALB VULP Albula vulpes bonefish
+ALE CILI,Alectis ciliaris,African pompano,ALE CILI Alectis ciliaris African pompano
+ALP AFER,Alphestes afer,mutton hamlet,ALP AFER Alphestes afer mutton hamlet
+ALU MONO,Aluterus monoceros,unicorn filefish,ALU MONO Aluterus monoceros unicorn filefish
+ALU SCHO,Aluterus schoepfii,orange filefish,ALU SCHO Aluterus schoepfii orange filefish
+ALU SCRI,Aluterus scriptus,scrawled filefish,ALU SCRI Aluterus scriptus scrawled filefish
+ALU SPE.,Aluterus sp.,filefish species,ALU SPE. Aluterus sp. filefish species
+AMB PINO,Amblycirrhitus pinos,redspotted hawkfish,AMB PINO Amblycirrhitus pinos redspotted hawkfish
+ANC LYOL,Anchoa lyolepis,dusky anchovy,ANC LYOL Anchoa lyolepis dusky anchovy
+ANI SURI,Anisotremus surinamensis,black margate,ANI SURI Anisotremus surinamensis black margate
+ANI VIRG,Anisotremus virginicus,porkfish,ANI VIRG Anisotremus virginicus porkfish
+ANT OCEL,Antennarius ocellatus,ocellated frogfish,ANT OCEL Antennarius ocellatus ocellated frogfish
+APO AURO,Apogon aurolineatus,bridle cardinalfish,APO AURO Apogon aurolineatus bridle cardinalfish
+APO BINO,Apogon binotatus,barred cardinalfish,APO BINO Apogon binotatus barred cardinalfish
+APO LACH,Apogon lachneri,whitestar cardinalfish,APO LACH Apogon lachneri whitestar cardinalfish
+APO MACU,Apogon maculatus,flamefish,APO MACU Apogon maculatus flamefish
+APO PHEN,Apogon phenax,mimic cardinalfish,APO PHEN Apogon phenax mimic cardinalfish
+APO PSEU,Apogon pseudomaculatus,twospot cardinalfish,APO PSEU Apogon pseudomaculatus twospot cardinalfish
+APO QUAD,Apogon quadrisquamatus,sawcheek cardinalfish,APO QUAD Apogon quadrisquamatus sawcheek cardinalfish
+APO SPE.,Apogon species,cardinalfish species,APO SPE. Apogon species cardinalfish species
+APO TOWN,Apogon townsendi,belted cardinalfish,APO TOWN Apogon townsendi belted cardinalfish
+ARC PROB,Archosargus probatocephalus,sheepshead,ARC PROB Archosargus probatocephalus sheepshead
+ARC RHOM,Archosargus rhomboidalis,sea bream,ARC RHOM Archosargus rhomboidalis sea bream
+ARI BALE,Ariosoma balearicum,bandtooth conger,ARI BALE Ariosoma balearicum bandtooth conger
+AST GUTT,Astroscopus guttatus,northern stargazer,AST GUTT Astroscopus guttatus northern stargazer
+AST PUNC,Astrapogon puncticulatus,blackfin cardinalfish,AST PUNC Astrapogon puncticulatus blackfin cardinalfish
+AST SPE.,Astrapogon sp.,cardinalfish species,AST SPE. Astrapogon sp. cardinalfish species
+AST STEL,Astrapogon stellatus,conchfish,AST STEL Astrapogon stellatus conchfish
+AST Y-GR,Astroscopus y-graecum,southern stargazer,AST Y-GR Astroscopus y-graecum southern stargazer
+ATH SPE.,Atherinomorus species,silverside species,ATH SPE. Atherinomorus species silverside species
+ATH STIP,Atherinomorus stipes,hardhead silverside,ATH STIP Atherinomorus stipes hardhead silverside
+AUL MACU,Aulostomus maculatus,Atlantic trumpetfish,AUL MACU Aulostomus maculatus Atlantic trumpetfish
+BAL CAPR,Balistes capriscus,gray triggerfish,BAL CAPR Balistes capriscus gray triggerfish
+BAL SPE.,Balistes sp.,triggerfish species,BAL SPE. Balistes sp. triggerfish species
+BAL VETU,Balistes vetula,queen triggerfish,BAL VETU Balistes vetula queen triggerfish
+BAT SOPO,Bathygobious soporator,frillfin goby,BAT SOPO Bathygobious soporator frillfin goby
+BEL SPE.,needlefish species,needlefish species,BEL SPE. needlefish species needlefish species
+BLE SPE.,blenny species,blenny species,BLE SPE. blenny species blenny species
+BOD PULC,Bodianus pulchellus,spotfin hogfish,BOD PULC Bodianus pulchellus spotfin hogfish
+BOD RUFU,Bodianus rufus,Spanish hogfish,BOD RUFU Bodianus rufus Spanish hogfish
+BOL BOQU,Bollmannia boqueronensis,white-eye goby,BOL BOQU Bollmannia boqueronensis white-eye goby
+BOT LUNA,Bothus lunatus,peacock flounder,BOT LUNA Bothus lunatus peacock flounder
+BOT OCEL,Bothus ocellatus,eyed flounder,BOT OCEL Bothus ocellatus eyed flounder
+BOT SPE.,Bothus species,lefteye flounders,BOT SPE. Bothus species lefteye flounders
+BRO BARB,Brotula barbata,Atlantic bearded brotula,BRO BARB Brotula barbata Atlantic bearded brotula
+CAL BAJO,Calamus bajonado,jolthead porgy,CAL BAJO Calamus bajonado jolthead porgy
+CAL CALA,Calamus calamus,saucereye porgy,CAL CALA Calamus calamus saucereye porgy
+CAL LEUC,Calamus leucosteus,whitebone porgy,CAL LEUC Calamus leucosteus whitebone porgy
+CAL NODO,Calamus nodosus,knobbed porgy,CAL NODO Calamus nodosus knobbed porgy
+CAL PENA,Calamus pennatula,pluma porgy ,CAL PENA Calamus pennatula pluma porgy 
+CAL PENN,Calamus penna,sheepshead porgy,CAL PENN Calamus penna sheepshead porgy
+CAL PROR,Calamus proridens,littlehead porgy,CAL PROR Calamus proridens littlehead porgy
+CAL SPE.,porgy species,porgy species,CAL SPE. porgy species porgy species
+CAN JAME,Canthigaster jamestyleri,goldface toby,CAN JAME Canthigaster jamestyleri goldface toby
+CAN MACR,Cantherhines macrocerus,whitespotted filefish,CAN MACR Cantherhines macrocerus whitespotted filefish
+CAN PULL,Cantherhines pullus,orangespotted filefish,CAN PULL Cantherhines pullus orangespotted filefish
+CAN ROST,Canthigaster rostrata,sharpnose puffer,CAN ROST Canthigaster rostrata sharpnose puffer
+CAN SPE.,Canthigaster species,puffers,CAN SPE. Canthigaster species puffers
+CAN SUFF,Canthidermis sufflamen,ocean triggerfish,CAN SUFF Canthidermis sufflamen ocean triggerfish
+CAR BART,Carangoides bartholomaei,yellow jack,CAR BART Carangoides bartholomaei yellow jack
+CAR CRYS,Caranx crysos,blue runner,CAR CRYS Caranx crysos blue runner
+CAR FALC,Carcharhinus falciformis,silky shark,CAR FALC Carcharhinus falciformis silky shark
+CAR HIPP,Caranx hippos,crevalle jack,CAR HIPP Caranx hippos crevalle jack
+CAR LATU,Caranx latus,horse-eye jack,CAR LATU Caranx latus horse-eye jack
+CAR LEUC,Carcharhinus leucas,bull shark,CAR LEUC Carcharhinus leucas bull shark
+CAR LIMB,Carcharhinus limbatus,blacktip shark,CAR LIMB Carcharhinus limbatus blacktip shark
+CAR LUGU,Caranx lugubris,black jack,CAR LUGU Caranx lugubris black jack
+CAR OBSC,Carcharhinus obscurus,dusky shark,CAR OBSC Carcharhinus obscurus dusky shark
+CAR PERE,Carcharhinus perezii,reef shark,CAR PERE Carcharhinus perezii reef shark
+CAR PLUM,Carcharhinus plumbeus,sandbar shark,CAR PLUM Carcharhinus plumbeus sandbar shark
+CAR RUBE,Caranx ruber,bar jack,CAR RUBE Caranx ruber bar jack
+CAR SPE.,Caranx sp.,jack species,CAR SPE. Caranx sp. jack species
+CEN ARGI,Centropyge argi,cherubfish,CEN ARGI Centropyge argi cherubfish
+CEN AURA,Centropyge aurantonotus,flameback angelfish,CEN AURA Centropyge aurantonotus flameback angelfish
+CEN OCYU,Centropristis ocyurus,bank sea bass,CEN OCYU Centropristis ocyurus bank sea bass
+CEN STRI,Centropristis striata,black sea bass,CEN STRI Centropristis striata black sea bass
+CEN UNDE,Centropomus undecimalis,common snook,CEN UNDE Centropomus undecimalis common snook
+CEP CRUE,Cephalopholis cruentata,graysby,CEP CRUE Cephalopholis cruentata graysby
+CEP FULV,Cephalopholis fulva,coney,CEP FULV Cephalopholis fulva coney
+CHA CAPI,Chaetodon capistratus,foureye butterflyfish,CHA CAPI Chaetodon capistratus foureye butterflyfish
+CHA FABE,Chaetodipterus faber,Atlantic spadefish,CHA FABE Chaetodipterus faber Atlantic spadefish
+CHA LIMB,Chaenopsis limbaughi,yellowface pikeblenny,CHA LIMB Chaenopsis limbaughi yellowface pikeblenny
+CHA OCEL,Chaetodon ocellatus,spotfin butterflyfish,CHA OCEL Chaetodon ocellatus spotfin butterflyfish
+CHA OCLL,Chaenopsis ocellata,bluethroat pikeblenny,CHA OCLL Chaenopsis ocellata bluethroat pikeblenny
+CHA SEDE,Chaetodon sedentarius,reef butterflyfish,CHA SEDE Chaetodon sedentarius reef butterflyfish
+CHA SPE.,Chaenopsis species,pikeblenny species,CHA SPE. Chaenopsis species pikeblenny species
+CHA STRI,Chaetodon striatus,banded butterflyfish,CHA STRI Chaetodon striatus banded butterflyfish
+CHI ANTE,Chilomycterus antennatus,bridled burrfish,CHI ANTE Chilomycterus antennatus bridled burrfish
+CHI ATIN,Chilomycterus atinga,spotted burrfish,CHI ATIN Chilomycterus atinga spotted burrfish
+CHI SCHO,Chilomycterus schoepfii,striped burrfish,CHI SCHO Chilomycterus schoepfii striped burrfish
+CHL CHRY,Chloroscombus chrysurus,Atlantic bumper,CHL CHRY Chloroscombus chrysurus Atlantic bumper
+CHR ATHE,Chriodorus atherinoides,hardhead halfbeak,CHR ATHE Chriodorus atherinoides hardhead halfbeak
+CHR CYAN,Chromis cyanea,blue chromis,CHR CYAN Chromis cyanea blue chromis
+CHR ENCH,Chromis enchrysura,yellowtail reeffish,CHR ENCH Chromis enchrysura yellowtail reeffish
+CHR INSO,Chromis insolata,sunshinefish,CHR INSO Chromis insolata sunshinefish
+CHR MULT,Chromis multilineata,brown chromis,CHR MULT Chromis multilineata brown chromis
+CHR SCOT,Chromis scotti,purple reeffish,CHR SCOT Chromis scotti purple reeffish
+CLE PARR,Clepticus parrae,creole wrasse,CLE PARR Clepticus parrae creole wrasse
+CLU SPE.,Clupeidae species,herring species,CLU SPE. Clupeidae species herring species
+CON TRIP,Conger triporiceps,manytooth conger,CON TRIP Conger triporiceps manytooth conger
+COR DICR,Coryphopterus dicrus,colon goby,COR DICR Coryphopterus dicrus colon goby
+COR EIDO,Coryphopterus eidolon,pallid goby,COR EIDO Coryphopterus eidolon pallid goby
+COR GLAU,Coryphopterus glaucofraenum,bridled goby,COR GLAU Coryphopterus glaucofraenum bridled goby
+COR LIPE,Coryphopterus lipernes,peppermint goby,COR LIPE Coryphopterus lipernes peppermint goby
+COR PERS,Coryphopterus personatus,masked goby,COR PERS Coryphopterus personatus masked goby
+COR PUNC,Coryphopterus punctipectophorus,spotted goby,COR PUNC Coryphopterus punctipectophorus spotted goby
+COR SPE.,Coryphopterus sp.,goby species,COR SPE. Coryphopterus sp. goby species
+COR TORT,Coryphopterus tortugae,patch-reef goby,COR TORT Coryphopterus tortugae patch-reef goby
+COR VENE,Coryphopterus venezuelae,sand-canyon goby,COR VENE Coryphopterus venezuelae sand-canyon goby
+COS ELUC,Cosmocampus elucens,shortfin pipefish,COS ELUC Cosmocampus elucens shortfin pipefish
+CRY ROSE,Cryptotomus roseus,bluelip parrotfish,CRY ROSE Cryptotomus roseus bluelip parrotfish
+CTE SAEP,Ctenogobius saepepallens,dash goby,CTE SAEP Ctenogobius saepepallens dash goby
+CTE STIG,Ctenogobius stigmaticus,marked goby,CTE STIG Ctenogobius stigmaticus marked goby
+DAC VOLI,Dactylopterus volitans,flying gurnard,DAC VOLI Dactylopterus volitans flying gurnard
+DAS AMER,Dasyatis americana,southern stingray,DAS AMER Dasyatis americana southern stingray
+DEC MACA,Decapterus macarellus,mackerel scad,DEC MACA Decapterus macarellus mackerel scad
+DEC PUNC,Decapterus punctatus,round scad,DEC PUNC Decapterus punctatus round scad
+DEC SPE.,Decapterus sp.,scad species,DEC SPE. Decapterus sp. scad species
+DER INER,Dermatolepis inermis,marbled grouper,DER INER Dermatolepis inermis marbled grouper
+DIO HOLO,Diodon holocanthus,balloonfish,DIO HOLO Diodon holocanthus balloonfish
+DIO HYST,Diodon hystrix,porcupinefish,DIO HYST Diodon hystrix porcupinefish
+DIO SPE.,puffer species,puffer species,DIO SPE. puffer species puffer species
+DIP ARGE,Diplodus argenteus,silver porgy,DIP ARGE Diplodus argenteus silver porgy
+DIP BIVI,Diplectrum bivittatum,dwarf sand perch,DIP BIVI Diplectrum bivittatum dwarf sand perch
+DIP FORM,Diplectrum formosum,sand perch,DIP FORM Diplectrum formosum sand perch
+DIP HOLB,Diplodus holbrookii,spottail pinfish,DIP HOLB Diplodus holbrookii spottail pinfish
+DOR MEGA,Doratonotus megalepis,dwarf wrasse,DOR MEGA Doratonotus megalepis dwarf wrasse
+ECH CATE,Echidna catenata,chain moray,ECH CATE Echidna catenata chain moray
+ECH NAUC,Echeneis naucrates,sharksucker,ECH NAUC Echeneis naucrates sharksucker
+ECH NEUC,Echeneis neucratoides,whitefin sharksucker,ECH NEUC Echeneis neucratoides whitefin sharksucker
+ELA BIPI,Elagatis bipinnulata,rainbow runner,ELA BIPI Elagatis bipinnulata rainbow runner
+ELA CHAN,Elacatinus chancei,shortstripe goby,ELA CHAN Elacatinus chancei shortstripe goby
+ELA DILE,Elacatinus dilepis,orangeside gody,ELA DILE Elacatinus dilepis orangeside gody
+ELA EVEL,Elacatinus evelynae,sharknose goby,ELA EVEL Elacatinus evelynae sharknose goby
+ELA HORS,Elacatinus horsti,yellowline goby,ELA HORS Elacatinus horsti yellowline goby
+ELA LOUI,Elacatinus louisae,spotlight goby,ELA LOUI Elacatinus louisae spotlight goby
+ELA MACR,Elacatinus macrodon,tiger goby,ELA MACR Elacatinus macrodon tiger goby
+ELA MULT,Elacatinus multifasciatus,greenbanded goby,ELA MULT Elacatinus multifasciatus greenbanded goby
+ELA OCEA,Elacatinus oceanops,neon goby,ELA OCEA Elacatinus oceanops neon goby
+ELA PROC,Elacatinus prochilos,broadstripe goby,ELA PROC Elacatinus prochilos broadstripe goby
+ELA RAND,Elacatinus randalli,yellownose goby,ELA RAND Elacatinus randalli yellownose goby
+ELA SAUC,Elacatinus saucrum,leopard goby,ELA SAUC Elacatinus saucrum leopard goby
+ELA SPE.,shark species,shark species,ELA SPE. shark species shark species
+ELA XANT,Elacatinus xanthiprora,yellowprow goby,ELA XANT Elacatinus xanthiprora yellowprow goby
+ELO SAUR,Elops saurus,ladyfish,ELO SAUR Elops saurus ladyfish
+EMB BAHA,Emblemariopsis bahamensis,blackhead blenny,EMB BAHA Emblemariopsis bahamensis blackhead blenny
+EMB DIAP,Emblemariopsis diapha,glass blenny,EMB DIAP Emblemariopsis diapha glass blenny
+EMB PAND,Emblemaria pandionis,sailfin blenny,EMB PAND Emblemaria pandionis sailfin blenny
+EMB SPE.,Emblemaria species,tube blenny Emblemaria,EMB SPE. Emblemaria species tube blenny Emblemaria
+EMM ATLA,Emmelichthyops atlanticus,bonnetmouth,EMM ATLA Emmelichthyops atlanticus bonnetmouth
+EMP SPE.,Emblemariopsis species,tube blenny Emblemariopsis,EMP SPE. Emblemariopsis species tube blenny Emblemariopsis
+ENC CARY,Enchelycore carychroa,chestnut moray,ENC CARY Enchelycore carychroa chestnut moray
+ENC NIGR,Enchelycore nigricans,viper moray,ENC NIGR Enchelycore nigricans viper moray
+ENG SPE.,Engraulidae species,anchovy species,ENG SPE. Engraulidae species anchovy species
+ENN ALTI,Enneanectes altivelis,lofty triplefin,ENN ALTI Enneanectes altivelis lofty triplefin
+ENN BOEH,Enneanectes boehlkei,roughhead triplefin,ENN BOEH Enneanectes boehlkei roughhead triplefin
+ENN SPE.,Enneanectes species,triplefin species,ENN SPE. Enneanectes species triplefin species
+ENT NIGR,Entomacrodus nigricans,pearl blenny,ENT NIGR Entomacrodus nigricans pearl blenny
+EPI ADSC,Epinephelus adscensionis,rock hind,EPI ADSC Epinephelus adscensionis rock hind
+EPI DRUM,Epinephelus drummondhayi,speckled hind,EPI DRUM Epinephelus drummondhayi speckled hind
+EPI FLAV,Epinephelus flavolimbatus,yellowedge grouper,EPI FLAV Epinephelus flavolimbatus yellowedge grouper
+EPI GUTT,Epinephelus guttatus,red hind,EPI GUTT Epinephelus guttatus red hind
+EPI ITAJ,Epinephelus itajara,goliath grouper,EPI ITAJ Epinephelus itajara goliath grouper
+EPI MORI,Epinephelus morio,red grouper,EPI MORI Epinephelus morio red grouper
+EPI NIVE,Epinephelus niveatus,Snowy grouper,EPI NIVE Epinephelus niveatus Snowy grouper
+EPI STRI,Epinephelus striatus,Nassau grouper,EPI STRI Epinephelus striatus Nassau grouper
+EQU LANC,Equetus lanceolatus,jackknife-fish,EQU LANC Equetus lanceolatus jackknife-fish
+EQU PUNC,Equetus punctatus,spotted drum,EQU PUNC Equetus punctatus spotted drum
+EUC ARGE,Eucinostomus argenteus,spotfin mojarra,EUC ARGE Eucinostomus argenteus spotfin mojarra
+EUC GULA,Eucinostomus gula,silver jenny,EUC GULA Eucinostomus gula silver jenny
+EUC JONE,Eucinostomus jonesii,slender mojarra,EUC JONE Eucinostomus jonesii slender mojarra
+EUC LEFR,Eucinostomus lefroyi,mottled mojarra,EUC LEFR Eucinostomus lefroyi mottled mojarra
+EUC MELA,Eucinostomus melanopterus,flagfin mojarra,EUC MELA Eucinostomus melanopterus flagfin mojarra
+EUT ALLE,Euthynnus alletteratus,little tunny,EUT ALLE Euthynnus alletteratus little tunny
+FIS TABA,Fistularia tabacaria,bluespotted cornetfish,FIS TABA Fistularia tabacaria bluespotted cornetfish
+GAL CUVI,Galeocerdo cuvier,tiger shark,GAL CUVI Galeocerdo cuvier tiger shark
+GER CINE,Gerres cinereus,yellowfin mojarra,GER CINE Gerres cinereus yellowfin mojarra
+GER SPE.,Gerres sp.,mojarra species,GER SPE. Gerres sp. mojarra species
+GIN CIRR,Ginglymostoma cirratum,nurse shark,GIN CIRR Ginglymostoma cirratum nurse shark
+GNA THOM,Gnatholepis thompsoni,goldspot goby,GNA THOM Gnatholepis thompsoni goldspot goby
+GOB GROS,Gobiosoma grosvenori,rockcut goby,GOB GROS Gobiosoma grosvenori rockcut goby
+GOB SPE.,goby species,goby species,GOB SPE. goby species goby species
+GRA LORE,Gramma loreto,fairy basslet,GRA LORE Gramma loreto fairy basslet
+GYM FUNE,Gymnothorax funebris,green moray,GYM FUNE Gymnothorax funebris green moray
+GYM MILI,Gymnothorax miliaris,goldentail moray,GYM MILI Gymnothorax miliaris goldentail moray
+GYM MORI,Gymnothorax moringa,spotted moray,GYM MORI Gymnothorax moringa spotted moray
+GYM NIGR,Gymnothorax nigromarginatus,blackedge moray,GYM NIGR Gymnothorax nigromarginatus blackedge moray
+GYM SAXI,Gymnothorax saxicola,honeycomb moray,GYM SAXI Gymnothorax saxicola honeycomb moray
+GYM SPE.,Gymnothorax species,moray eel Gymnothorax,GYM SPE. Gymnothorax species moray eel Gymnothorax
+GYM VICI,Gymnothorax vicinus,purplemouth moray,GYM VICI Gymnothorax vicinus purplemouth moray
+HAE ALBU,Haemulon album,margate,HAE ALBU Haemulon album margate
+HAE AURO,Haemulon aurolineatum,tomtate,HAE AURO Haemulon aurolineatum tomtate
+HAE CARB,Haemulon carbonarium,caesar grunt,HAE CARB Haemulon carbonarium caesar grunt
+HAE CHRY,Haemulon chrysargyreum,smallmouth grunt,HAE CHRY Haemulon chrysargyreum smallmouth grunt
+HAE FLAV,Haemulon flavolineatum,French grunt,HAE FLAV Haemulon flavolineatum French grunt
+HAE MACR,Haemulon macrostomum,Spanish grunt,HAE MACR Haemulon macrostomum Spanish grunt
+HAE MELA,Haemulon melanurum,cottonwick,HAE MELA Haemulon melanurum cottonwick
+HAE PARR,Haemulon parra,sailors choice,HAE PARR Haemulon parra sailors choice
+HAE PLUM,Haemulon plumierii,white grunt,HAE PLUM Haemulon plumierii white grunt
+HAE SCIU,Haemulon sciurus,bluestriped grunt,HAE SCIU Haemulon sciurus bluestriped grunt
+HAE SPE.,Haemulon sp.,grunt species,HAE SPE. Haemulon sp. grunt species
+HAE STRI,Haemulon striatum,striped grunt,HAE STRI Haemulon striatum striped grunt
+HAL BIVI,Halichoeres bivittatus,slippery dick,HAL BIVI Halichoeres bivittatus slippery dick
+HAL BURE,Halichoeres burekae,mardi gras wrasse,HAL BURE Halichoeres burekae mardi gras wrasse
+HAL CAUD,Halichoeres caudalis,painted wrasse,HAL CAUD Halichoeres caudalis painted wrasse
+HAL CYAN,Halichoeres cyanocephalus,yellowcheek wrasse,HAL CYAN Halichoeres cyanocephalus yellowcheek wrasse
+HAL GARN,Halichoeres garnoti,yellowhead wrasse,HAL GARN Halichoeres garnoti yellowhead wrasse
+HAL MACU,Halichoeres maculipinna,clown wrasse,HAL MACU Halichoeres maculipinna clown wrasse
+HAL PICT,Halichoeres pictus,rainbow wrasse,HAL PICT Halichoeres pictus rainbow wrasse
+HAL POEY,Halichoeres poeyi,blackear wrasse,HAL POEY Halichoeres poeyi blackear wrasse
+HAL RADI,Halichoeres radiatus,puddingwife,HAL RADI Halichoeres radiatus puddingwife
+HAL SPE.,Halichoeres species,wrasse species,HAL SPE. Halichoeres species wrasse species
+HAR HUME,Harengula humeralis,redear sardine,HAR HUME Harengula humeralis redear sardine
+HAR JAGU,Harengula jaguana,scaled sardine,HAR JAGU Harengula jaguana scaled sardine
+HEM BRAS,Hemiramphus brasiliensis,ballyhoo,HEM BRAS Hemiramphus brasiliensis ballyhoo
+HEM SIMU,Hemiemblemaria simula,wrasse blenny,HEM SIMU Hemiemblemaria simula wrasse blenny
+HET CRUE,Heteropriacanthus cruentatus,glasseye snapper,HET CRUE Heteropriacanthus cruentatus glasseye snapper
+HET LONG,Heteroconger longissimus,brown garden eel,HET LONG Heteroconger longissimus brown garden eel
+HIP EREC,Hippocampus erectus,lined seahorse,HIP EREC Hippocampus erectus lined seahorse
+HIP REID,Hippocampus reidi,longsnout seahorse,HIP REID Hippocampus reidi longsnout seahorse
+HIP SPE.,Hippocampus species,seahorse/pipefish species,HIP SPE. Hippocampus species seahorse/pipefish species
+HOA SPE.,Holacanthus species,angelfish Holacanthus,HOA SPE. Holacanthus species angelfish Holacanthus
+HOL ADSC,Holocentrus adscensionis,squirrelfish,HOL ADSC Holocentrus adscensionis squirrelfish
+HOL BERM,Holacanthus bermudensis,blue angelfish,HOL BERM Holacanthus bermudensis blue angelfish
+HOL CILI,Holacanthus ciliaris,queen angelfish,HOL CILI Holacanthus ciliaris queen angelfish
+HOL RUFU,Holocentrus rufus,longspine squirrelfish,HOL RUFU Holocentrus rufus longspine squirrelfish
+HOL SPE.,squirrelfish species,squirrelfish species,HOL SPE. squirrelfish species squirrelfish species
+HOL TOWN,Holocanthus townsendi,townsend angelfish,HOL TOWN Holocanthus townsendi townsend angelfish
+HOL TRIC,Holacanthus tricolor,rock beauty,HOL TRIC Holacanthus tricolor rock beauty
+HYP ABER,Hypoplectrus aberrans,yellowbelly hamlet,HYP ABER Hypoplectrus aberrans yellowbelly hamlet
+HYP BERM,Hypleurochilus bermudensis,barred blenny,HYP BERM Hypleurochilus bermudensis barred blenny
+HYP CHLO,Hypoplectrus chlorurus,yellowtail hamlet,HYP CHLO Hypoplectrus chlorurus yellowtail hamlet
+HYP GEMM,Hypoplectrus gemma,blue hamlet,HYP GEMM Hypoplectrus gemma blue hamlet
+HYP GUMM,Hypoplectrus gummigutta,golden hamlet,HYP GUMM Hypoplectrus gummigutta golden hamlet
+HYP GUTT,Hypoplectrus guttavarius,shy hamlet,HYP GUTT Hypoplectrus guttavarius shy hamlet
+HYP HARR,Hypoatherina harringtonensis,reef silverside,HYP HARR Hypoatherina harringtonensis reef silverside
+HYP HYBR,Hypoplectrus hybrid,hybrid hamlet,HYP HYBR Hypoplectrus hybrid hybrid hamlet
+HYP INDI,Hypoplectrus indigo,indigo hamlet,HYP INDI Hypoplectrus indigo indigo hamlet
+HYP NIGR,Hypoplectrus nigricans,black hamlet,HYP NIGR Hypoplectrus nigricans black hamlet
+HYP PUEL,Hypoplectrus puella,barred hamlet,HYP PUEL Hypoplectrus puella barred hamlet
+HYP SPE.,Hypoplectrus sp.,hamlet species,HYP SPE. Hypoplectrus sp. hamlet species
+HYP TANN,Hypoplectrus tann,tan hamlet,HYP TANN Hypoplectrus tann tan hamlet
+HYP UNIC,Hypoplectrus unicolor,butter hamlet,HYP UNIC Hypoplectrus unicolor butter hamlet
+INE VITT,Inermia vittata,boga,INE VITT Inermia vittata boga
+IST PLAT,Istiophorus platypterus,sailfish,IST PLAT Istiophorus platypterus sailfish
+JEN SPE.,Jenkinsia sp.,herring species,JEN SPE. Jenkinsia sp. herring species
+KYP SECT,Kyphosus sectatrix,Bermuda chub,KYP SECT Kyphosus sectatrix Bermuda chub
+LAB BUCC,Labrisomus bucciferus,puffcheek blenny,LAB BUCC Labrisomus bucciferus puffcheek blenny
+LAB FILA,Labrisomus filamentosus,quillfin blenny,LAB FILA Labrisomus filamentosus quillfin blenny
+LAB GOBI,Labrisomus gobio,palehead blenny,LAB GOBI Labrisomus gobio palehead blenny
+LAB KALI,Labrisomus kalisherae,downy blenny,LAB KALI Labrisomus kalisherae downy blenny
+LAB NIGR,Labrisomus nigricinctus,spotcheek blenny,LAB NIGR Labrisomus nigricinctus spotcheek blenny
+LAB NUCH,Labrisomus nuchipinnis,hairy blenny,LAB NUCH Labrisomus nuchipinnis hairy blenny
+LAB SPE.,Labrisomid sp.,labrisomid blenny species,LAB SPE. Labrisomid sp. labrisomid blenny species
+LAC BICA,Lactophrys bicaudalis,spotted trunkfish,LAC BICA Lactophrys bicaudalis spotted trunkfish
+LAC MAXI,Lachnolaimus maximus,hogfish,LAC MAXI Lachnolaimus maximus hogfish
+LAC SPE.,Lactophrys species,trunkfish species,LAC SPE. Lactophrys species trunkfish species
+LAC TRIG,Lactophrys trigonus,trunkfish,LAC TRIG Lactophrys trigonus trunkfish
+LAC TRIQ,Lactophrys triqueter,smooth trunkfish,LAC TRIQ Lactophrys triqueter smooth trunkfish
+LAG RHOM,Lagodon rhomboides,pinfish,LAG RHOM Lagodon rhomboides pinfish
+LIO EUKR,Liopropoma eukrines,wrasse basslet,LIO EUKR Liopropoma eukrines wrasse basslet
+LIO MOWB,Liopropoma mowbrayi,cave basslet,LIO MOWB Liopropoma mowbrayi cave basslet
+LIO RUBE,Liopropoma rubre,peppermint basslet,LIO RUBE Liopropoma rubre peppermint basslet
+LON MICR,Lonchopisthus micrognathus,swordtail jawfish,LON MICR Lonchopisthus micrognathus swordtail jawfish
+LOP CYPR,Lophogobius cyprinoides,crested goby,LOP CYPR Lophogobius cyprinoides crested goby
+LUT ANAL,Lutjanus analis,mutton snapper,LUT ANAL Lutjanus analis mutton snapper
+LUT APOD,Lutjanus apodus,schoolmaster,LUT APOD Lutjanus apodus schoolmaster
+LUT BUCC,Lutjanus buccanella,blackfin snapper,LUT BUCC Lutjanus buccanella blackfin snapper
+LUT CAMP,Lutjanus campechanus,red snapper,LUT CAMP Lutjanus campechanus red snapper
+LUT CYAN,Lutjanus cyanopterus,cubera snapper,LUT CYAN Lutjanus cyanopterus cubera snapper
+LUT GRIS,Lutjanus griseus,gray snapper,LUT GRIS Lutjanus griseus gray snapper
+LUT JOCU,Lutjanus jocu,dog snapper,LUT JOCU Lutjanus jocu dog snapper
+LUT MAHO,Lutjanus mahogoni,mahogany snapper,LUT MAHO Lutjanus mahogoni mahogany snapper
+LUT SPE.,snapper species,snapper species,LUT SPE. snapper species snapper species
+LUT SYNA,Lutjanus synagris,lane snapper,LUT SYNA Lutjanus synagris lane snapper
+MAL AURO,Malacoctenus aurolineatus,goldline blenny,MAL AURO Malacoctenus aurolineatus goldline blenny
+MAL BOEH,Malacoctenus boehlkei,diamond blenny,MAL BOEH Malacoctenus boehlkei diamond blenny
+MAL GILL,Malacoctenus gilli,dusky blenny,MAL GILL Malacoctenus gilli dusky blenny
+MAL MACR,Malacoctenus macropus,rosy blenny,MAL MACR Malacoctenus macropus rosy blenny
+MAL PLUM,Malacanthus plumieri,sand tilefish,MAL PLUM Malacanthus plumieri sand tilefish
+MAL SPE.,Malacoctenus species,blenny species,MAL SPE. Malacoctenus species blenny species
+MAL TRIA,Malacoctenus triangulatus,saddled blenny,MAL TRIA Malacoctenus triangulatus saddled blenny
+MAL VERS,Malacoctenus versicolor,barfin blenny,MAL VERS Malacoctenus versicolor barfin blenny
+MAN BIRO,Manta birostris,giant manta,MAN BIRO Manta birostris giant manta
+MEG ATLA,Megalops atlanticus,tarpon,MEG ATLA Megalops atlanticus tarpon
+MEL NIGE,Melichthys niger,black durgon,MEL NIGE Melichthys niger black durgon
+MEN SPE.,Menidia sp.,silverside species,MEN SPE. Menidia sp. silverside species
+MIC CARR,Microgobius carri,Seminole goby,MIC CARR Microgobius carri Seminole goby
+MIC CHRY,Microspathodon chrysurus,yellowtail damselfish,MIC CHRY Microspathodon chrysurus yellowtail damselfish
+MIC MICR,Microgobius microlepis,banner goby,MIC MICR Microgobius microlepis banner goby
+MIC SIGN,Microgobius signatus,dashback goby,MIC SIGN Microgobius signatus dashback goby
+MIC SPE.,Microgobius species,goby Microgobius,MIC SPE. Microgobius species goby Microgobius
+MON CILI,Monacanthus ciliatus,fringed filefish,MON CILI Monacanthus ciliatus fringed filefish
+MON SPE.,Mocanthus species,filefish species,MON SPE. Mocanthus species filefish species
+MON TUCK,Monacanthus tuckeri,slender filefish,MON TUCK Monacanthus tuckeri slender filefish
+MUG CEPH,Mugil cephalus,striped mullet,MUG CEPH Mugil cephalus striped mullet
+MUL MART,Mulloidichthys martinicus,yellow goatfish,MUL MART Mulloidichthys martinicus yellow goatfish
+MUR RETI,Muraena retifera,reticulate moray,MUR RETI Muraena retifera reticulate moray
+MUR SPE.,Muraenidae species,moray species,MUR SPE. Muraenidae species moray species
+MYC ACUT,Mycteroperca acutirostris,western comb grouper,MYC ACUT Mycteroperca acutirostris western comb grouper
+MYC BONA,Mycteroperca bonaci,black grouper,MYC BONA Mycteroperca bonaci black grouper
+MYC INTE,Mycteroperca interstitialis,yellowmouth grouper,MYC INTE Mycteroperca interstitialis yellowmouth grouper
+MYC MICR,Mycteroperca microlepis,gag,MYC MICR Mycteroperca microlepis gag
+MYC PHEN,Mycteroperca phenax,scamp,MYC PHEN Mycteroperca phenax scamp
+MYC SPE.,Mycteroperca species,grouper species,MYC SPE. Mycteroperca species grouper species
+MYC TIGR,Mycteroperca tigris,tiger grouper,MYC TIGR Mycteroperca tigris tiger grouper
+MYC VENE,Mycteroperca venenosa,yellowfin grouper,MYC VENE Mycteroperca venenosa yellowfin grouper
+MYR BREV,Myrichthys breviceps,sharptail eel,MYR BREV Myrichthys breviceps sharptail eel
+MYR JACO,Myripristis jacobus,blackbar soldierfish,MYR JACO Myripristis jacobus blackbar soldierfish
+MYR OCEL,Myrichthys ocellatus,goldspotted eel,MYR OCEL Myrichthys ocellatus goldspotted eel
+MYR SPE.,Myrichthys species,snake eel Myrichthys,MYR SPE. Myrichthys species snake eel Myrichthys
+NAR BANC,Narcine bancroftii,lesser electric ray,NAR BANC Narcine bancroftii lesser electric ray
+NEG BREV,Negaprion brevirostris,lemon shark,NEG BREV Negaprion brevirostris lemon shark
+NEO MARI,Neoniphon marianus,longjaw squirrelfish,NEO MARI Neoniphon marianus longjaw squirrelfish
+NES LONG,Nes longus,orangespotted goby,NES LONG Nes longus orangespotted goby
+NIC USTA,Nicholsina usta,emerald parrotfish,NIC USTA Nicholsina usta emerald parrotfish
+NO FISH,no observed fishes,no observed fishes,NO FISH no observed fishes no observed fishes
+OCY CHRY,Ocyurus chrysurus,yellowtail snapper,OCY CHRY Ocyurus chrysurus yellowtail snapper
+ODO DENT,Odontoscion dentex,reef croaker,ODO DENT Odontoscion dentex reef croaker
+OGC NASU,Ogcocephalus nasutus,shortnose batfish,OGC NASU Ogcocephalus nasutus shortnose batfish
+OGC SPE.,Ogcocephalus sp.,batfish species,OGC SPE. Ogcocephalus sp. batfish species
+OLI SAUR,Oligoplites saurus,leatherjack,OLI SAUR Oligoplites saurus leatherjack
+OPH MACC,Ophioblennius macclurei,redlip blenny,OPH MACC Ophioblennius macclurei redlip blenny
+OPH OPHI,Ophichthus ophis,spotted snake eel,OPH OPHI Ophichthus ophis spotted snake eel
+OPH SPE.,Ophichthidae species,snake eel species,OPH SPE. Ophichthidae species snake eel species
+OPI AURI,Opistognathus aurifrons,yellowhead jawfish,OPI AURI Opistognathus aurifrons yellowhead jawfish
+OPI MACR,Opistognathus macrognathus,banded jawfish,OPI MACR Opistognathus macrognathus banded jawfish
+OPI MAXI,Opistognathus maxillosus,mottled jawfish,OPI MAXI Opistognathus maxillosus mottled jawfish
+OPI SPE.,Opistognathus sp.,jawfish species,OPI SPE. Opistognathus sp. jawfish species
+OPI WHIT,Opistognathus whitehursti,dusky jawfish,OPI WHIT Opistognathus whitehursti dusky jawfish
+OPS TAU_,Opsanus tau,oyster toadfish,OPS TAU_ Opsanus tau oyster toadfish
+ORT CHRY,Orthopristis chrysoptera,pigfish,ORT CHRY Orthopristis chrysoptera pigfish
+Other1,Other1,new species 1,Other1 Other1 new species 1
+Other2,Other2,new species 2,Other2 Other2 new species 2
+Other3,Other3,new species 3,Other3 Other3 new species 3
+OXY STIG,Oxyurichthys stigmalophius,spotfin goby,OXY STIG Oxyurichthys stigmalophius spotfin goby
+PAG PAGR,Pagrus pagrus,red porgy,PAG PAGR Pagrus pagrus red porgy
+PAR ACUM,Pareques acuminatus,high-hat,PAR ACUM Pareques acuminatus high-hat
+PAR ALBI,Paralichthys albigutta,Gulf flounder,PAR ALBI Paralichthys albigutta Gulf flounder
+PAR BAIR,Paradiplogrammus bairdi,lancer dragonet,PAR BAIR Paradiplogrammus bairdi lancer dragonet
+PAR FURC,Paranthias furcifer,Atlantic creolefish,PAR FURC Paranthias furcifer Atlantic creolefish
+PAR INCI,Parasphyraenops incisus,splitfin bass,PAR INCI Parasphyraenops incisus splitfin bass
+PAR MARM,Parablennius marmoreus,seaweed blenny,PAR MARM Parablennius marmoreus seaweed blenny
+PAR MARN,Paraclinus marmoratus,marbled blenny,PAR MARN Paraclinus marmoratus marbled blenny
+PAR NIGR,Paraclinus nigripinnis,blackfin blenny,PAR NIGR Paraclinus nigripinnis blackfin blenny
+PAR UMBR,Pareques umbrosus,cubbyu,PAR UMBR Pareques umbrosus cubbyu
+PEM SCHO,Pempheris schomburgkii,glassy sweeper,PEM SCHO Pempheris schomburgkii glassy sweeper
+PEP TRIA,Peprilus triacanthus ,American butterfish,PEP TRIA Peprilus triacanthus  American butterfish
+PHA XENU,Phaeoptyx xenus,sponge cardinalfish,PHA XENU Phaeoptyx xenus sponge cardinalfish
+PLA ARGA,Platybelone argalus argalus,keeltail needlefish,PLA ARGA Platybelone argalus argalus keeltail needlefish
+PLA ORBI,Platax orbicularis,orbicular batfish,PLA ORBI Platax orbicularis orbicular batfish
+POM ARCU,Pomacanthus arcuatus,gray angelfish,POM ARCU Pomacanthus arcuatus gray angelfish
+POM PARU,Pomacanthus paru,French angelfish,POM PARU Pomacanthus paru French angelfish
+POM SPE.,Pomacanthus species,angelfish Pomacanthus ,POM SPE. Pomacanthus species angelfish Pomacanthus 
+PRI AQUI,Pristipomoides aquilonaris,wenchman,PRI AQUI Pristipomoides aquilonaris wenchman
+PRI AREN,Priacanthus arenatus,bigeye,PRI AREN Priacanthus arenatus bigeye
+PRI HIPO,Priolepis hipoliti,rusty goby,PRI HIPO Priolepis hipoliti rusty goby
+PRI OPHR,Prionotus ophryas,bandtail searobin,PRI OPHR Prionotus ophryas bandtail searobin
+PRI PECT,Pristis pectinata,smalltooth sawfish,PRI PECT Pristis pectinata smalltooth sawfish
+PRI RUBI,Prionotus rubio,blackwing searobin,PRI RUBI Prionotus rubio blackwing searobin
+PRO ACUL,Prognathodes aculeatus,longsnout butterflyfish,PRO ACUL Prognathodes aculeatus longsnout butterflyfish
+PRO AYA_,Prognathodes aya,bank butterflyfish,PRO AYA_ Prognathodes aya bank butterflyfish
+PSE MACU,Pseudupeneus maculatus,spotted goatfish,PSE MACU Pseudupeneus maculatus spotted goatfish
+PTE CALL,Ptereleotris calliura,blue dartfish,PTE CALL Ptereleotris calliura blue dartfish
+PTE HELE,Ptereleotris helenae,hovering dartfish,PTE HELE Ptereleotris helenae hovering dartfish
+PTE VOLI,Pterois volitans,red lionfish,PTE VOLI Pterois volitans red lionfish
+RAC CANA,Rachycentron canadum,cobia,RAC CANA Rachycentron canadum cobia
+REM REMO,Remora remora,remora,REM REMO Remora remora remora
+RHI BONA,Rhinoptera bonasus,cownose ray,RHI BONA Rhinoptera bonasus cownose ray
+RHI LENT,Rhinobatos lentiginosus,Atlantic guitarfish,RHI LENT Rhinobatos lentiginosus Atlantic guitarfish
+RHI TERR,Rhizoprionodon terraenovae,Atlantic sharpnose shark,RHI TERR Rhizoprionodon terraenovae Atlantic sharpnose shark
+RHO AURO,Rhomboplites aurorubens,vermilion snapper,RHO AURO Rhomboplites aurorubens vermilion snapper
+RIS RUBE,Risor ruber,tusked goby,RIS RUBE Risor ruber tusked goby
+RYP BIST,Rypticus bistrispinus,freckled soapfish,RYP BIST Rypticus bistrispinus freckled soapfish
+RYP MACU,Rypticus maculatus,whitespotted soapfish,RYP MACU Rypticus maculatus whitespotted soapfish
+RYP SAPO,Rypticus saponaceus,greater soapfish,RYP SAPO Rypticus saponaceus greater soapfish
+SAR AURI,Sardinella aurita,Spanish sardine,SAR AURI Sardinella aurita Spanish sardine
+SAR BULL,Sargocentron bullisi,deepwater squirrelfish,SAR BULL Sargocentron bullisi deepwater squirrelfish
+SAR CORU,Sargocentron coruscum,reef squirrelfish,SAR CORU Sargocentron coruscum reef squirrelfish
+SAR SARD,Sarda sarda,Atlantic bonito,SAR SARD Sarda sarda Atlantic bonito
+SAR VEXI,Sargocentron vexillarium,dusky squirrelfish,SAR VEXI Sargocentron vexillarium dusky squirrelfish
+SCA COEL,Scarus coelestinus,midnight parrotfish,SCA COEL Scarus coelestinus midnight parrotfish
+SCA COER,Scarus coeruleus,blue parrotfish,SCA COER Scarus coeruleus blue parrotfish
+SCA CRIS,Scartella cristata,molly miller,SCA CRIS Scartella cristata molly miller
+SCA GUAC,Scarus guacamaia,rainbow parrotfish,SCA GUAC Scarus guacamaia rainbow parrotfish
+SCA ISER,Scarus iseri,striped parrotfish,SCA ISER Scarus iseri striped parrotfish
+SCA SPE.,Scarus sp.,parrotfish species,SCA SPE. Scarus sp. parrotfish species
+SCA TAEN,Scarus taeniopterus,princess parrotfish,SCA TAEN Scarus taeniopterus princess parrotfish
+SCA VETU,Scarus vetula,queen parrotfish,SCA VETU Scarus vetula queen parrotfish
+SCH BETA,Schultzea beta,school bass,SCH BETA Schultzea beta school bass
+SCI SPE.,drum species,drum species,SCI SPE. drum species drum species
+SCO CARI,Scorpaenodes caribbaeus,reef scorpionfish,SCO CARI Scorpaenodes caribbaeus reef scorpionfish
+SCO CAVA,Scomberomorus cavalla,king mackerel,SCO CAVA Scomberomorus cavalla king mackerel
+SCO MACU,Scomberomorus maculatus,Spanish mackerel,SCO MACU Scomberomorus maculatus Spanish mackerel
+SCO PLUM,Scorpaena plumieri,spotted scorpionfish,SCO PLUM Scorpaena plumieri spotted scorpionfish
+SCO REGA,Scomberomorus regalis,cero,SCO REGA Scomberomorus regalis cero
+SCR SPE.,Scorpaena species,scorpionfish species,SCR SPE. Scorpaena species scorpionfish species
+SEL CRUM,Selar crumenophthalmus,bigeye scad,SEL CRUM Selar crumenophthalmus bigeye scad
+SEL VOME,Selene vomer,lookdown,SEL VOME Selene vomer lookdown
+SER ANNU,Serranus annularis,orangeback bass,SER ANNU Serranus annularis orangeback bass
+SER BALD,Serranus baldwini,lantern bass,SER BALD Serranus baldwini lantern bass
+SER DUME,Seriola dumerili,greater amberjack,SER DUME Seriola dumerili greater amberjack
+SER FLAV,Serranus flaviventris,twinspot bass,SER FLAV Serranus flaviventris twinspot bass
+SER PHOE,Serranus phoebe,tattler,SER PHOE Serranus phoebe tattler
+SER PUMI,Serraniculus pumilio,pygmy sea bass,SER PUMI Serraniculus pumilio pygmy sea bass
+SER RIVO,Seriola rivoliana,almaco jack,SER RIVO Seriola rivoliana almaco jack
+SER SPE.,Serranus species,Seabass species,SER SPE. Serranus species Seabass species
+SER SUBL,Serranus subligarius,belted sandfish,SER SUBL Serranus subligarius belted sandfish
+SER TABA,Serranus tabacarius,tobaccofish,SER TABA Serranus tabacarius tobaccofish
+SER TIGR,Serranus tigrinus,harlequin bass,SER TIGR Serranus tigrinus harlequin bass
+SER TORT,Serranus tortugarum,chalk bass,SER TORT Serranus tortugarum chalk bass
+SER ZONA,Seriola zonata,banded rudderfish,SER ZONA Seriola zonata banded rudderfish
+SPA ATOM,Sparisoma atomarium,greenblotch parrotfish,SPA ATOM Sparisoma atomarium greenblotch parrotfish
+SPA AURO,Sparisoma aurofrenatum,redband parrotfish,SPA AURO Sparisoma aurofrenatum redband parrotfish
+SPA CHRY,Sparisoma chrysopterum,redtail parrotfish,SPA CHRY Sparisoma chrysopterum redtail parrotfish
+SPA RADI,Sparisoma radians,bucktooth parrotfish,SPA RADI Sparisoma radians bucktooth parrotfish
+SPA RUBR,Sparisoma rubripinne,yellowtail parrotfish,SPA RUBR Sparisoma rubripinne yellowtail parrotfish
+SPA SPE.,Sparisoma sp.,parrotfish species,SPA SPE. Sparisoma sp. parrotfish species
+SPA VIRI,Sparisoma viride,stoplight parrotfish,SPA VIRI Sparisoma viride stoplight parrotfish
+SPH BARR,Sphyraena barracuda,great barracuda,SPH BARR Sphyraena barracuda great barracuda
+SPH GUAC,Sphyraena guachancho,guaguanche,SPH GUAC Sphyraena guachancho guaguanche
+SPH LEWI,Sphyrna lewini,scalloped hammerhead,SPH LEWI Sphyrna lewini scalloped hammerhead
+SPH MOKA,Sphyrna mokarran,great hammerhead,SPH MOKA Sphyrna mokarran great hammerhead
+SPH NEPH,Sphoeroides nephelus,southern puffer,SPH NEPH Sphoeroides nephelus southern puffer
+SPH PICU,Sphyraena picudilla,southern sennet,SPH PICU Sphyraena picudilla southern sennet
+SPH SPEN,Sphoeroides spengleri,bandtail puffer,SPH SPEN Sphoeroides spengleri bandtail puffer
+SPH TEST,Sphoeroides testudineus,checkered puffer,SPH TEST Sphoeroides testudineus checkered puffer
+SPH TIBU,Sphyrna tiburo,bonnethead,SPH TIBU Sphyrna tiburo bonnethead
+SRR SPE.,grouper-sea bass species,grouper-sea bass species,SRR SPE. grouper-sea bass species grouper-sea bass species
+STE ADUS,Stegastes adustus,dusky damselfish,STE ADUS Stegastes adustus dusky damselfish
+STE DIEN,Stegastes diencaeus,longfin damselfish,STE DIEN Stegastes diencaeus longfin damselfish
+STE HISP,Stephanolepis hispidus,planehead filefish,STE HISP Stephanolepis hispidus planehead filefish
+STE LEUC,Stegastes leucostictus,beaugregory,STE LEUC Stegastes leucostictus beaugregory
+STE PART,Stegastes partitus,bicolor damselfish,STE PART Stegastes partitus bicolor damselfish
+STE PLAN,Stegastes planifrons,threespot damselfish,STE PLAN Stegastes planifrons threespot damselfish
+STE SETI,Stephanolepis setifer,pygmy filefish,STE SETI Stephanolepis setifer pygmy filefish
+STE SPE.,damselfish species,damselfish species,STE SPE. damselfish species damselfish species
+STE VARI,Stegastes variabilis,cocoa damselfish,STE VARI Stegastes variabilis cocoa damselfish
+STR NOTA,Strongylura notata,redfin needlefish,STR NOTA Strongylura notata redfin needlefish
+STR SPE.,Stromateidae species,butterfish species,STR SPE. Stromateidae species butterfish species
+STR TIMU,Strongylura timucu,timucu,STR TIMU Strongylura timucu timucu
+STY LATE,Stygnobrotula latebricola,black brotula,STY LATE Stygnobrotula latebricola black brotula
+SYA MICR,Syacium micrurum,channel flounder,SYA MICR Syacium micrurum channel flounder
+SYA SPE.,Syacium species,sand flounder species,SYA SPE. Syacium species sand flounder species
+SYG SPE.,Syngnathus sp.,pipefish species,SYG SPE. Syngnathus sp. pipefish species
+SYN DAWS,Syngnathus dawsoni,dashback goby,SYN DAWS Syngnathus dawsoni dashback goby
+SYN FOET,Synodus foetens,inshore lizardfish,SYN FOET Synodus foetens inshore lizardfish
+SYN INTE,Synodus intermedius,sand diver,SYN INTE Synodus intermedius sand diver
+SYN SAUR,Synodus saurus,bluestriped lizardfish,SYN SAUR Synodus saurus bluestriped lizardfish
+SYN SCOV,Syngnathus scovelli,gulf pipefish,SYN SCOV Syngnathus scovelli gulf pipefish
+SYN SYNO,Synodus synodus,red lizardfish,SYN SYNO Synodus synodus red lizardfish
+THA BIFA,Thalassoma bifasciatum,bluehead,THA BIFA Thalassoma bifasciatum bluehead
+TRA FALC,Trachinotus falcatus,permit,TRA FALC Trachinotus falcatus permit
+TRA GOOD,Trachinotus goodei,palometa,TRA GOOD Trachinotus goodei palometa
+TRA LATH,Trachurus lathami,rough scad,TRA LATH Trachurus lathami rough scad
+TRI SPE.,Triglidae species,sea robin species,TRI SPE. Triglidae species sea robin species
+TYL CROC,Tylosurus crocodilus,houndfish,TYL CROC Tylosurus crocodilus houndfish
+UMB CORO,Umbrina coroides,sand drum,UMB CORO Umbrina coroides sand drum
+UNK SPE.,unknown species,unknown species,UNK SPE. unknown species unknown species
+UPE PARV,Upeneus parvus,dwarf goatfish,UPE PARV Upeneus parvus dwarf goatfish
+URO JAMA,Urobatis jamaicensis,yellow stingray,URO JAMA Urobatis jamaicensis yellow stingray
+XAN RING,Xanthichthys ringens,sargassum triggerfish,XAN RING Xanthichthys ringens sargassum triggerfish
+XYR MART,Xyrichtys martinicensis,rosy razorfish,XYR MART Xyrichtys martinicensis rosy razorfish
+XYR NOVA,Xyrichtys novacula,pearly razorfish,XYR NOVA Xyrichtys novacula pearly razorfish
+XYR SPE.,razorfish species,razorfish species,XYR SPE. razorfish species razorfish species
+XYR SPLE,Xyrichtys splendens,green razorfish,XYR SPLE Xyrichtys splendens green razorfish

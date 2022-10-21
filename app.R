@@ -6,6 +6,7 @@ library(shinycssloaders)
 
 myFiles <- list.files("plots/", pattern = "*.R", full.names = T)
 sapply(myFiles, source)
+species <- read.csv("Data/speciesList.csv")
 
 ui <- fluidPage(
   titlePanel("Fish"),
@@ -23,10 +24,10 @@ ui <- fluidPage(
         c("Dry Tortugas", "Florida Keys", "SE Florida"),
         selected = "Dry Tortugas"
       ),
-      textInput("species",
-        "Species",
-        value = "MYC BONA",
-        placeholder = "MYC BONA"
+      selectInput("species",
+                  "Select Species",
+                  choices = setNames(species$SPECIES_CD, species$search_name),
+                  selected = "OCY CHRY"
       ),
       # submitButton("Build Species Plots"),
       width = 2
