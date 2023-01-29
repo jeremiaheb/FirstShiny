@@ -8,6 +8,9 @@ library(shinythemes)
 myFiles <- list.files("plots/", pattern = "*.R", full.names = T)
 sapply(myFiles, source)
 species <- read.csv("Data/speciesList.csv")
+drto <- readRDS("Data/drytortugas.rds")
+keys <- readRDS("Data/floridakeys.rds")
+sefl <- readRDS("Data/seflorida.rds")
 
 ui <- fluidPage(theme = shinytheme("yeti"),
   titlePanel("Fish"),
@@ -30,7 +33,7 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                   choices = setNames(species$SPECIES_CD, species$search_name),
                   selected = "OCY CHRY"
       ),
-      # submitButton("Build Species Plots"),
+      submitButton("Build Species Plots"),
       width = 2
     ),
     mainPanel(
@@ -42,7 +45,9 @@ ui <- fluidPage(theme = shinytheme("yeti"),
               12,
               withSpinner(
                 plotOutput("densityplot"),
-                type = 3,
+                image = "DSC_1310.jpg",
+                image.width = 900,
+                image.height = 600,
                 color.background = "white"
               )
             )
@@ -53,7 +58,8 @@ ui <- fluidPage(theme = shinytheme("yeti"),
               withSpinner(
                 plotOutput("occurrenceplot"),
                 type = 3,
-                color.background = "white"
+                color.background = "white",
+                hide.ui = TRUE
               )
             ),
             column(
@@ -61,7 +67,8 @@ ui <- fluidPage(theme = shinytheme("yeti"),
               withSpinner(
                 plotOutput("biomassplot"),
                 type = 3,
-                color.background = "white"
+                color.background = "white",
+                hide.ui = TRUE
               )
             )
           ),
@@ -71,7 +78,8 @@ ui <- fluidPage(theme = shinytheme("yeti"),
               withSpinner(
                 plotOutput("lenfreqplot"),
                 type = 3,
-                color.background = "white"
+                color.background = "white",
+                hide.ui = TRUE
               )
             )
           )
@@ -104,20 +112,20 @@ ui <- fluidPage(theme = shinytheme("yeti"),
   )
 )
 server <- function(input, output) {
-
+  
   # dataset choice
   dataset <- reactive({
     if (input$domain == "Dry Tortugas") {
-      return(readRDS("stash/drytortugas.rds"))
+      return(drto)
     } else if (input$domain == "Florida Keys") {
-      return(readRDS("stash/floridakeys.rds"))
+      return(keys)
     } else if (input$domain == "SE Florida") {
-      return(readRDS("stash/seflorida.rds"))
+      return(sefl)
     }
   })
 
   dt <- reactiveValues()
-
+  
   output$densityplot <- renderPlot({
     a <- plot_domain_den_by_year(
       dataset = dataset(),
@@ -176,4 +184,5 @@ server <- function(input, output) {
     }
   )
 }
+
 shinyApp(ui, server)
