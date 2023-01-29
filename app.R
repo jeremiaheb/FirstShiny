@@ -3,6 +3,7 @@ library(tidyverse)
 library(rvc)
 library(shinycssloaders)
 library(shinythemes)
+install_github("jeremiaheb/rvc")
 
 
 myFiles <- list.files("plots/", pattern = "*.R", full.names = T)
