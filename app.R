@@ -4,6 +4,9 @@ library(rvc)
 library(shinycssloaders)
 library(shinythemes)
 library(shinyWidgets)
+library(leaflet)
+library("rgdal")
+library(sf)
 # install_github("jeremiaheb/rvc")
 
 myFiles <- list.files("plots/", pattern = "*.R", full.names = T)
@@ -13,9 +16,10 @@ drto <- readRDS("Data/drytortugas.rds")
 keys <- readRDS("Data/floridakeys.rds")
 sefl <- readRDS("Data/seflorida.rds")
 
+# res = rgdal::readOGR("www/spabounds.geojson")
+
 ui <-
-  
-  navbarPage("NCRMP Atlatic Fish", collapsible = TRUE, inverse = TRUE, theme = shinytheme("spacelab"),
+  navbarPage("NCRMP Atlantic Fish", collapsible = TRUE, inverse = TRUE, theme = shinytheme("spacelab"),
              # Home panel ----
              tabPanel("Home",
                       # parent container
@@ -124,6 +128,17 @@ ui <-
                                           )
                                         )
                                       ),
+                                      tabPanel("Map",
+                                               fluidPage(
+                                                 fluidRow(
+                                                   column(12,
+                                                          tags$div(class = "mappage",
+                                                                   leafletOutput("mymap", width = "100%", height = 900)
+                                                          )
+                                                   )
+                                                 )
+                                               )
+                                      ),
                                       tabPanel(
                                         "Table",
                                         fluidRow(
@@ -165,11 +180,9 @@ ui <-
              # about panel --------
              tabPanel("About")
   )
-
-# Server section ----
-
+# Server ----
 server <- function(input, output) {
-
+  
   # dataset choice
   dataset <- reactive({
     if (input$domain == "Dry Tortugas") {
@@ -182,6 +195,14 @@ server <- function(input, output) {
   })
 
   dt <- reactiveValues()
+  
+  output$mymap <- renderLeaflet({
+    sites = dataset()$sample %>% filter(YEAR == 2018) %>% group_by(REGION, YEAR, PRIMARY_SAMPLE_UNIT, STATION_NR) %>% summarise(lat = mean(LAT_DEGREES), lon = mean(LON_DEGREES)) 
+      leaflet(sites) %>%
+      addProviderTiles(providers$Esri.WorldImagery) %>% 
+      addMarkers(lng = ~lon, lat = ~lat,
+                 popup = paste0("<img src = HYGE.jpg width=100 height=100>"))
+  })
 
   output$densityplot <- renderPlot({
     a <- plot_domain_den_by_year(
