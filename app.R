@@ -5,18 +5,13 @@ library(shinycssloaders)
 library(shinythemes)
 library(shinyWidgets)
 library(leaflet)
-library("rgdal")
-library(sf)
-# install_github("jeremiaheb/rvc")
 
 myFiles <- list.files("plots/", pattern = "*.R", full.names = T)
 sapply(myFiles, source)
-species <- read.csv("Data/speciesList.csv")
-drto <- readRDS("Data/drytortugas.rds")
-keys <- readRDS("Data/floridakeys.rds")
-sefl <- readRDS("Data/seflorida.rds")
-
-# res = rgdal::readOGR("www/spabounds.geojson")
+species <- read.csv("Data/speciesList_short.csv")
+drto <- readRDS("Data/drto_samll.rds")
+keys <- readRDS("Data/keys_small.rds")
+sefl <- readRDS("Data/sefl_small.rds")
 
 ui <-
   navbarPage("NCRMP Atlantic Fish", collapsible = TRUE, inverse = TRUE, theme = shinytheme("spacelab"),
@@ -49,7 +44,7 @@ ui <-
                                                  tags$h1("Welcome"),
                                                  tags$p("This shiny application 
                                                         analyzes fish data from the
-                                                        Gulf, Atlantic and Caribbean regions."),
+                                                        Gulf", actionLink("Atlantic", "Atlantic")),
                                         )
                                )
                       )
@@ -77,7 +72,7 @@ ui <-
                                                 choices = setNames(species$SPECIES_CD, species$search_name),
                                                 selected = "OCY CHRY"
                                     ),
-                                    submitButton("Build Species Plots"),
+                                    actionButton("build", "Build Species Plots"),
                                     width = 2
                                   ),
                                   mainPanel(
@@ -89,10 +84,9 @@ ui <-
                                             12,
                                             withSpinner(
                                               plotOutput("densityplot"),
-                                              image = "DSC_1310.jpg",
-                                              image.width = 900,
-                                              image.height = 600,
-                                              color.background = "white"
+                                              type = 1,
+                                              color.background = "white",
+                                              hide.ui = TRUE
                                             )
                                           )
                                         ),
@@ -181,10 +175,12 @@ ui <-
              tabPanel("About")
   )
 # Server ----
-server <- function(input, output) {
-  
+server <- function(input, output, session) {
+  observeEvent(input$Atlantic, {
+    updateNavbarPage(session, "Atlantic")
+  })
   # dataset choice
-  dataset <- reactive({
+  dataset <- eventReactive(input$build, {
     if (input$domain == "Dry Tortugas") {
       return(drto)
     } else if (input$domain == "Florida Keys") {
@@ -193,35 +189,50 @@ server <- function(input, output) {
       return(sefl)
     }
   })
-
-  dt <- reactiveValues()
   
-  output$mymap <- renderLeaflet({
-    sites = dataset()$sample %>% filter(YEAR == 2018) %>% group_by(REGION, YEAR, PRIMARY_SAMPLE_UNIT, STATION_NR) %>% summarise(lat = mean(LAT_DEGREES), lon = mean(LON_DEGREES)) 
-      leaflet(sites) %>%
-      addProviderTiles(providers$Esri.WorldImagery) %>% 
-      addMarkers(lng = ~lon, lat = ~lat,
-                 popup = paste0("<img src = HYGE.jpg width=100 height=100>"))
+  years <- eventReactive(input$build, {
+    input$years
+  })
+  
+  spp <- eventReactive(input$build, {
+    input$species  
+  })
+  
+  domain <- eventReactive(input$build, {
+    input$domain  
   })
 
+  dt <- reactiveValues()
+      
+  output$mymap <- renderLeaflet({
+    sites = dataset()$sample_data %>% filter(YEAR == max(dataset()$sample_data$YEAR)) %>% group_by(REGION, YEAR, PRIMARY_SAMPLE_UNIT, STATION_NR) %>% summarise(lat = mean(LAT_DEGREES), lon = mean(LON_DEGREES))
+      leaflet(sites) %>%
+      addProviderTiles(providers$Esri.WorldImagery) %>%
+      addMarkers(lng = ~lon, lat = ~lat,
+                 popup = ~PRIMARY_SAMPLE_UNIT)
+                 # popup = paste0("<img src = HYGE.jpg width=100 height=100>"))
+  })
+
+  observeEvent(input$build, {
   output$densityplot <- renderPlot({
     a <- plot_domain_den_by_year(
       dataset = dataset(),
-      species = input$species,
-      years = seq(input$years[1], input$years[2]),
+      species = spp(),
+      years = seq(years()[1], years()[2]),
       print_dataframe = T,
-      title = paste(input$domain, input$species)
+      title = paste(domain(), spp())
     )
     dt$densitydata <- a
   })
-
+  })
+ 
   output$occurrenceplot <- renderPlot({
     a <- plot_domain_occ_by_year(
       dataset = dataset(),
-      species = input$species,
-      years = seq(input$years[1], input$years[2]),
+      species = spp(),
+      years = seq(years()[1], years()[2]),
       print_dataframe = T,
-      title = paste(input$domain, input$species)
+      title = paste(domain(), spp())
     )
     dt$occurrencedata <- a
   })
@@ -229,10 +240,10 @@ server <- function(input, output) {
   output$biomassplot <- renderPlot({
     a <- plot_domain_biomass_by_year(
       dataset = dataset(),
-      species = input$species,
-      years = seq(input$years[1], input$years[2]),
+      species = spp(),
+      years = seq(years()[1], years()[2]),
       print_dataframe = T,
-      title = paste(input$domain, input$species)
+      title = paste(domain(), spp())
     )
     dt$biomassdata <- a
   })
@@ -240,9 +251,9 @@ server <- function(input, output) {
   output$lenfreqplot <- renderPlot({
     plot_domain_LF_by_year(
       data = dataset(),
-      species = input$species,
+      species = spp(),
       bin_size = 5,
-      title = paste(input$domain, input$species)
+      title = paste(domain(), spp())
     )
   })
 

@@ -1,0 +1,155 @@
+SPECIES_CD,SCIENTIFIC_NAME,COMMON_NAME,search_name
+ACA BAHI,Acanthurus bahianus,ocean surgeon,ocean surgeon  Acanthurus bahianus
+ACA CHIR,Acanthurus chirurgus,doctorfish,doctorfish  Acanthurus chirurgus
+ACA COER,Acanthurus coeruleus,blue tang,blue tang  Acanthurus coeruleus
+ALU SCRI,Aluterus scriptus,scrawled filefish,scrawled filefish  Aluterus scriptus
+ANI SURI,Anisotremus surinamensis,black margate,black margate  Anisotremus surinamensis
+ANI VIRG,Anisotremus virginicus,porkfish,porkfish  Anisotremus virginicus
+AUL MACU,Aulostomus maculatus,Atlantic trumpetfish,Atlantic trumpetfish  Aulostomus maculatus
+BAL CAPR,Balistes capriscus,gray triggerfish,gray triggerfish  Balistes capriscus
+BAL SPE.,Balistes sp.,triggerfish species,triggerfish species  Balistes sp.
+BAL VETU,Balistes vetula,queen triggerfish,queen triggerfish  Balistes vetula
+BOD RUFU,Bodianus rufus,Spanish hogfish,Spanish hogfish  Bodianus rufus
+CAL CALA,Calamus calamus,saucereye porgy,saucereye porgy  Calamus calamus
+CAL NODO,Calamus nodosus,knobbed porgy,knobbed porgy  Calamus nodosus
+CAL PROR,Calamus proridens,littlehead porgy,littlehead porgy  Calamus proridens
+CAN MACR,Cantherhines macrocerus,whitespotted filefish,whitespotted filefish  Cantherhines macrocerus
+CAN PULL,Cantherhines pullus,orangespotted filefish,orangespotted filefish  Cantherhines pullus
+CAN ROST,Canthigaster rostrata,sharpnose puffer,sharpnose puffer  Canthigaster rostrata
+CAN SUFF,Canthidermis sufflamen,ocean triggerfish,ocean triggerfish  Canthidermis sufflamen
+CAR BART,Carangoides bartholomaei,yellow jack,yellow jack  Carangoides bartholomaei
+CAR CRYS,Caranx crysos,blue runner,blue runner  Caranx crysos
+CAR RUBE,Caranx ruber,bar jack,bar jack  Caranx ruber
+CEP CRUE,Cephalopholis cruentata,graysby,graysby  Cephalopholis cruentata
+CEP FULV,Cephalopholis fulva,coney,coney  Cephalopholis fulva
+CHA CAPI,Chaetodon capistratus,foureye butterflyfish,foureye butterflyfish  Chaetodon capistratus
+CHA OCEL,Chaetodon ocellatus,spotfin butterflyfish,spotfin butterflyfish  Chaetodon ocellatus
+CHA SEDE,Chaetodon sedentarius,reef butterflyfish,reef butterflyfish  Chaetodon sedentarius
+CHA STRI,Chaetodon striatus,banded butterflyfish,banded butterflyfish  Chaetodon striatus
+CHI ANTE,Chilomycterus antennatus,bridled burrfish,bridled burrfish  Chilomycterus antennatus
+CHI ATIN,Chilomycterus atinga,spotted burrfish,spotted burrfish  Chilomycterus atinga
+CHI SCHO,Chilomycterus schoepfii,striped burrfish,striped burrfish  Chilomycterus schoepfii
+CHR CYAN,Chromis cyanea,blue chromis,blue chromis  Chromis cyanea
+CHR ENCH,Chromis enchrysura,yellowtail reeffish,yellowtail reeffish  Chromis enchrysura
+CHR INSO,Chromis insolata,sunshinefish,sunshinefish  Chromis insolata
+CHR MULT,Chromis multilineata,brown chromis,brown chromis  Chromis multilineata
+CHR SCOT,Chromis scotti,purple reeffish,purple reeffish  Chromis scotti
+CLE PARR,Clepticus parrae,creole wrasse,creole wrasse  Clepticus parrae
+DIO HOLO,Diodon holocanthus,balloonfish,balloonfish  Diodon holocanthus
+DIO HYST,Diodon hystrix,porcupinefish,porcupinefish  Diodon hystrix
+EPI ADSC,Epinephelus adscensionis,rock hind,rock hind  Epinephelus adscensionis
+EPI GUTT,Epinephelus guttatus,red hind,red hind  Epinephelus guttatus
+EPI ITAJ,Epinephelus itajara,goliath grouper,goliath grouper  Epinephelus itajara
+EPI MORI,Epinephelus morio,red grouper,red grouper  Epinephelus morio
+EPI STRI,Epinephelus striatus,Nassau grouper,Nassau grouper  Epinephelus striatus
+EQU LANC,Equetus lanceolatus,jackknife-fish,jackknife-fish  Equetus lanceolatus
+EQU PUNC,Equetus punctatus,spotted drum,spotted drum  Equetus punctatus
+FIS TABA,Fistularia tabacaria,bluespotted cornetfish,bluespotted cornetfish  Fistularia tabacaria
+GER CINE,Gerres cinereus,yellowfin mojarra,yellowfin mojarra  Gerres cinereus
+HAE ALBU,Haemulon album,margate,margate  Haemulon album
+HAE AURO,Haemulon aurolineatum,tomtate,tomtate  Haemulon aurolineatum
+HAE CARB,Haemulon carbonarium,caesar grunt,caesar grunt  Haemulon carbonarium
+HAE CHRY,Haemulon chrysargyreum,smallmouth grunt,smallmouth grunt  Haemulon chrysargyreum
+HAE FLAV,Haemulon flavolineatum,French grunt,French grunt  Haemulon flavolineatum
+HAE MACR,Haemulon macrostomum,Spanish grunt,Spanish grunt  Haemulon macrostomum
+HAE MELA,Haemulon melanurum,cottonwick,cottonwick  Haemulon melanurum
+HAE PARR,Haemulon parra,sailors choice,sailors choice  Haemulon parra
+HAE PLUM,Haemulon plumierii,white grunt,white grunt  Haemulon plumierii
+HAE SCIU,Haemulon sciurus,bluestriped grunt,bluestriped grunt  Haemulon sciurus
+HAE STRI,Haemulon striatum,striped grunt,striped grunt  Haemulon striatum
+HAL GARN,Halichoeres garnoti,yellowhead wrasse,yellowhead wrasse  Halichoeres garnoti
+HAL MACU,Halichoeres maculipinna,clown wrasse,clown wrasse  Halichoeres maculipinna
+HAL PICT,Halichoeres pictus,rainbow wrasse,rainbow wrasse  Halichoeres pictus
+HAL POEY,Halichoeres poeyi,blackear wrasse,blackear wrasse  Halichoeres poeyi
+HAL RADI,Halichoeres radiatus,puddingwife,puddingwife  Halichoeres radiatus
+HET CRUE,Heteropriacanthus cruentatus,glasseye snapper,glasseye snapper  Heteropriacanthus cruentatus
+HOL ADSC,Holocentrus adscensionis,squirrelfish,squirrelfish  Holocentrus adscensionis
+HOL BERM,Holacanthus bermudensis,blue angelfish,blue angelfish  Holacanthus bermudensis
+HOL CILI,Holacanthus ciliaris,queen angelfish,queen angelfish  Holacanthus ciliaris
+HOL RUFU,Holocentrus rufus,longspine squirrelfish,longspine squirrelfish  Holocentrus rufus
+HOL TOWN,Holocanthus townsendi,townsend angelfish,townsend angelfish  Holocanthus townsendi
+HOL TRIC,Holacanthus tricolor,rock beauty,rock beauty  Holacanthus tricolor
+HYP ABER,Hypoplectrus aberrans,yellowbelly hamlet,yellowbelly hamlet  Hypoplectrus aberrans
+HYP BERM,Hypleurochilus bermudensis,barred blenny,barred blenny  Hypleurochilus bermudensis
+HYP CHLO,Hypoplectrus chlorurus,yellowtail hamlet,yellowtail hamlet  Hypoplectrus chlorurus
+HYP GEMM,Hypoplectrus gemma,blue hamlet,blue hamlet  Hypoplectrus gemma
+HYP GUMM,Hypoplectrus gummigutta,golden hamlet,golden hamlet  Hypoplectrus gummigutta
+HYP GUTT,Hypoplectrus guttavarius,shy hamlet,shy hamlet  Hypoplectrus guttavarius
+HYP HYBR,Hypoplectrus hybrid,hybrid hamlet,hybrid hamlet  Hypoplectrus hybrid
+HYP INDI,Hypoplectrus indigo,indigo hamlet,indigo hamlet  Hypoplectrus indigo
+HYP NIGR,Hypoplectrus nigricans,black hamlet,black hamlet  Hypoplectrus nigricans
+HYP PUEL,Hypoplectrus puella,barred hamlet,barred hamlet  Hypoplectrus puella
+HYP TANN,Hypoplectrus tann,tan hamlet,tan hamlet  Hypoplectrus tann
+HYP UNIC,Hypoplectrus unicolor,butter hamlet,butter hamlet  Hypoplectrus unicolor
+KYP SECT,Kyphosus sectatrix,Bermuda chub,Bermuda chub  Kyphosus sectatrix
+LAC BICA,Lactophrys bicaudalis,spotted trunkfish,spotted trunkfish  Lactophrys bicaudalis
+LAC MAXI,Lachnolaimus maximus,hogfish,hogfish  Lachnolaimus maximus
+LAC TRIG,Lactophrys trigonus,trunkfish,trunkfish  Lactophrys trigonus
+LAC TRIQ,Lactophrys triqueter,smooth trunkfish,smooth trunkfish  Lactophrys triqueter
+LUT ANAL,Lutjanus analis,mutton snapper,mutton snapper  Lutjanus analis
+LUT APOD,Lutjanus apodus,schoolmaster,schoolmaster  Lutjanus apodus
+LUT BUCC,Lutjanus buccanella,blackfin snapper,blackfin snapper  Lutjanus buccanella
+LUT CYAN,Lutjanus cyanopterus,cubera snapper,cubera snapper  Lutjanus cyanopterus
+LUT GRIS,Lutjanus griseus,gray snapper,gray snapper  Lutjanus griseus
+LUT JOCU,Lutjanus jocu,dog snapper,dog snapper  Lutjanus jocu
+LUT MAHO,Lutjanus mahogoni,mahogany snapper,mahogany snapper  Lutjanus mahogoni
+LUT SYNA,Lutjanus synagris,lane snapper,lane snapper  Lutjanus synagris
+MAL PLUM,Malacanthus plumieri,sand tilefish,sand tilefish  Malacanthus plumieri
+MEG ATLA,Megalops atlanticus,tarpon,tarpon  Megalops atlanticus
+MEL NIGE,Melichthys niger,black durgon,black durgon  Melichthys niger
+MIC CHRY,Microspathodon chrysurus,yellowtail damselfish,yellowtail damselfish  Microspathodon chrysurus
+MUL MART,Mulloidichthys martinicus,yellow goatfish,yellow goatfish  Mulloidichthys martinicus
+MYC BONA,Mycteroperca bonaci,black grouper,black grouper  Mycteroperca bonaci
+MYC INTE,Mycteroperca interstitialis,yellowmouth grouper,yellowmouth grouper  Mycteroperca interstitialis
+MYC MICR,Mycteroperca microlepis,gag,gag  Mycteroperca microlepis
+MYC PHEN,Mycteroperca phenax,scamp,scamp  Mycteroperca phenax
+MYC TIGR,Mycteroperca tigris,tiger grouper,tiger grouper  Mycteroperca tigris
+MYC VENE,Mycteroperca venenosa,yellowfin grouper,yellowfin grouper  Mycteroperca venenosa
+MYR JACO,Myripristis jacobus,blackbar soldierfish,blackbar soldierfish  Myripristis jacobus
+NEO MARI,Neoniphon marianus,longjaw squirrelfish,longjaw squirrelfish  Neoniphon marianus
+NIC USTA,Nicholsina usta,emerald parrotfish,emerald parrotfish  Nicholsina usta
+OCY CHRY,Ocyurus chrysurus,yellowtail snapper,yellowtail snapper  Ocyurus chrysurus
+ODO DENT,Odontoscion dentex,reef croaker,reef croaker  Odontoscion dentex
+PAR FURC,Paranthias furcifer,Atlantic creolefish,Atlantic creolefish  Paranthias furcifer
+POM ARCU,Pomacanthus arcuatus,gray angelfish,gray angelfish  Pomacanthus arcuatus
+POM PARU,Pomacanthus paru,French angelfish,French angelfish  Pomacanthus paru
+PRO ACUL,Prognathodes aculeatus,longsnout butterflyfish,longsnout butterflyfish  Prognathodes aculeatus
+PRO AYA_,Prognathodes aya,bank butterflyfish,bank butterflyfish  Prognathodes aya
+PSE MACU,Pseudupeneus maculatus,spotted goatfish,spotted goatfish  Pseudupeneus maculatus
+PTE VOLI,Pterois volitans,red lionfish,red lionfish  Pterois volitans
+RHO AURO,Rhomboplites aurorubens,vermilion snapper,vermilion snapper  Rhomboplites aurorubens
+RYP SAPO,Rypticus saponaceus,greater soapfish,greater soapfish  Rypticus saponaceus
+SAR AURI,Sardinella aurita,Spanish sardine,Spanish sardine  Sardinella aurita
+SAR VEXI,Sargocentron vexillarium,dusky squirrelfish,dusky squirrelfish  Sargocentron vexillarium
+SCA COEL,Scarus coelestinus,midnight parrotfish,midnight parrotfish  Scarus coelestinus
+SCA COER,Scarus coeruleus,blue parrotfish,blue parrotfish  Scarus coeruleus
+SCA GUAC,Scarus guacamaia,rainbow parrotfish,rainbow parrotfish  Scarus guacamaia
+SCA ISER,Scarus iseri,striped parrotfish,striped parrotfish  Scarus iseri
+SCA SPE.,Scarus sp.,parrotfish species,parrotfish species  Scarus sp.
+SCA TAEN,Scarus taeniopterus,princess parrotfish,princess parrotfish  Scarus taeniopterus
+SCA VETU,Scarus vetula,queen parrotfish,queen parrotfish  Scarus vetula
+SCO REGA,Scomberomorus regalis,cero,cero  Scomberomorus regalis
+SCR SPE.,Scorpaena species,scorpionfish species,scorpionfish species  Scorpaena species
+SEL CRUM,Selar crumenophthalmus,bigeye scad,bigeye scad  Selar crumenophthalmus
+SEL VOME,Selene vomer,lookdown,lookdown  Selene vomer
+SER ANNU,Serranus annularis,orangeback bass,orangeback bass  Serranus annularis
+SER BALD,Serranus baldwini,lantern bass,lantern bass  Serranus baldwini
+SER DUME,Seriola dumerili,greater amberjack,greater amberjack  Seriola dumerili
+SER RIVO,Seriola rivoliana,almaco jack,almaco jack  Seriola rivoliana
+SER TABA,Serranus tabacarius,tobaccofish,tobaccofish  Serranus tabacarius
+SER TIGR,Serranus tigrinus,harlequin bass,harlequin bass  Serranus tigrinus
+SPA ATOM,Sparisoma atomarium,greenblotch parrotfish,greenblotch parrotfish  Sparisoma atomarium
+SPA AURO,Sparisoma aurofrenatum,redband parrotfish,redband parrotfish  Sparisoma aurofrenatum
+SPA CHRY,Sparisoma chrysopterum,redtail parrotfish,redtail parrotfish  Sparisoma chrysopterum
+SPA RADI,Sparisoma radians,bucktooth parrotfish,bucktooth parrotfish  Sparisoma radians
+SPA RUBR,Sparisoma rubripinne,yellowtail parrotfish,yellowtail parrotfish  Sparisoma rubripinne
+SPA VIRI,Sparisoma viride,stoplight parrotfish,stoplight parrotfish  Sparisoma viride
+SPH BARR,Sphyraena barracuda,great barracuda,great barracuda  Sphyraena barracuda
+STE ADUS,Stegastes adustus,dusky damselfish,dusky damselfish  Stegastes adustus
+STE DIEN,Stegastes diencaeus,longfin damselfish,longfin damselfish  Stegastes diencaeus
+STE LEUC,Stegastes leucostictus,beaugregory,beaugregory  Stegastes leucostictus
+STE PART,Stegastes partitus,bicolor damselfish,bicolor damselfish  Stegastes partitus
+STE PLAN,Stegastes planifrons,threespot damselfish,threespot damselfish  Stegastes planifrons
+STE VARI,Stegastes variabilis,cocoa damselfish,cocoa damselfish  Stegastes variabilis
+THA BIFA,Thalassoma bifasciatum,bluehead,bluehead  Thalassoma bifasciatum
+TRA FALC,Trachinotus falcatus,permit,permit  Trachinotus falcatus
