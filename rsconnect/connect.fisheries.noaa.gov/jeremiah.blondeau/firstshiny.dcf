@@ -1,0 +1,13 @@
+name: firstshiny
+title: FirstShiny
+username: jeremiah.blondeau
+account: jeremiah.blondeau
+server: connect.fisheries.noaa.gov
+hostUrl: https://connect.fisheries.noaa.gov/__api__
+appId: 160
+bundleId: 661
+url: https://connect.fisheries.noaa.gov/content/155c23db-3121-4f63-81bc-04c1411f43b4/
+when: 1675292825.9004
+lastSyncTime: 1675292825.9004
+asMultiple: FALSE
+asStatic: FALSE

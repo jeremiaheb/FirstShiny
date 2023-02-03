@@ -170,15 +170,20 @@ ui <-
                           tabPanel("subpanel 4")
                         ))),
              # outreach panel ------
-             tabPanel("Outreach"),
+             tabPanel("Outreach",
+                      fluidPage(
+                        tags$iframe(src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1B-iclSukiIB36Ny4M5wEBNddu7U_3XoJFHE6mQAvfFA&font=Default&lang=en&initial_zoom=2&height=650',
+                                    width='100%',
+                                    height='650',
+                                    frameborder='0')
+                      )
+             ),
              # about panel --------
              tabPanel("About")
   )
 # Server ----
 server <- function(input, output, session) {
-  observeEvent(input$Atlantic, {
-    updateNavbarPage(session, "Atlantic")
-  })
+
   # dataset choice
   dataset <- eventReactive(input$build, {
     if (input$domain == "Dry Tortugas") {
