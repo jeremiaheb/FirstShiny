@@ -14,7 +14,7 @@ keys <- readRDS("Data/keys_small.rds")
 sefl <- readRDS("Data/sefl_small.rds")
 
 ui <-
-  navbarPage("NCRMP Atlantic Fish", collapsible = TRUE, inverse = TRUE, theme = shinytheme("spacelab"),
+  navbarPage("NCRMP Atlantic Fish", collapsible = TRUE, inverse = TRUE, theme = bs_theme(bootswatch = "sketchy"),
              # Home panel ----
              tabPanel("Home",
                       # parent container
