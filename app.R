@@ -5,6 +5,7 @@ library(shinycssloaders)
 library(shinythemes)
 library(shinyWidgets)
 library(leaflet)
+library(bslib)
 
 myFiles <- list.files("plots/", pattern = "*.R", full.names = T)
 sapply(myFiles, source)
@@ -12,6 +13,13 @@ species <- read.csv("Data/speciesList_short.csv")
 drto <- readRDS("Data/drto_samll.rds")
 keys <- readRDS("Data/keys_small.rds")
 sefl <- readRDS("Data/sefl_small.rds")
+
+source("mod-density.R")
+source("mod-occurrence.R")
+source("mod-biomass.R")
+source("mod-lenfreq.R")
+
+
 
 ui <-
   navbarPage("NCRMP Atlantic Fish", collapsible = TRUE, inverse = TRUE, theme = bs_theme(bootswatch = "sketchy"),
@@ -80,45 +88,21 @@ ui <-
                                       tabPanel(
                                         "Plot",
                                         fluidRow(
-                                          column(
-                                            12,
-                                            withSpinner(
-                                              plotOutput("densityplot"),
-                                              type = 1,
-                                              color.background = "white",
-                                              hide.ui = TRUE
-                                            )
+                                          column(12,
+                                            density_ui("x")  
                                           )
                                         ),
                                         fluidRow(
-                                          column(
-                                            6,
-                                            withSpinner(
-                                              plotOutput("occurrenceplot"),
-                                              type = 3,
-                                              color.background = "white",
-                                              hide.ui = TRUE
-                                            )
+                                          column(6,
+                                            occurrence_ui("x")
                                           ),
-                                          column(
-                                            6,
-                                            withSpinner(
-                                              plotOutput("biomassplot"),
-                                              type = 3,
-                                              color.background = "white",
-                                              hide.ui = TRUE
-                                            )
+                                          column(6,
+                                            biomass_ui("x")
                                           )
                                         ),
                                         fluidRow(
-                                          column(
-                                            12,
-                                            withSpinner(
-                                              plotOutput("lenfreqplot"),
-                                              type = 3,
-                                              color.background = "white",
-                                              hide.ui = TRUE
-                                            )
+                                          column(12,
+                                            lenfreq_ui("x")
                                           )
                                         )
                                       ),
@@ -184,7 +168,6 @@ ui <-
 # Server ----
 server <- function(input, output, session) {
 
-  # dataset choice
   dataset <- eventReactive(input$build, {
     if (input$domain == "Dry Tortugas") {
       return(drto)
@@ -219,47 +202,10 @@ server <- function(input, output, session) {
   })
 
   observeEvent(input$build, {
-  output$densityplot <- renderPlot({
-    a <- plot_domain_den_by_year(
-      dataset = dataset(),
-      species = spp(),
-      years = seq(years()[1], years()[2]),
-      print_dataframe = T,
-      title = paste(domain(), spp())
-    )
-    dt$densitydata <- a
-  })
-  })
- 
-  output$occurrenceplot <- renderPlot({
-    a <- plot_domain_occ_by_year(
-      dataset = dataset(),
-      species = spp(),
-      years = seq(years()[1], years()[2]),
-      print_dataframe = T,
-      title = paste(domain(), spp())
-    )
-    dt$occurrencedata <- a
-  })
-
-  output$biomassplot <- renderPlot({
-    a <- plot_domain_biomass_by_year(
-      dataset = dataset(),
-      species = spp(),
-      years = seq(years()[1], years()[2]),
-      print_dataframe = T,
-      title = paste(domain(), spp())
-    )
-    dt$biomassdata <- a
-  })
-
-  output$lenfreqplot <- renderPlot({
-    plot_domain_LF_by_year(
-      data = dataset(),
-      species = spp(),
-      bin_size = 5,
-      title = paste(domain(), spp())
-    )
+    density_server("x", dataset(), domain(), spp(), years())
+    occurrence_server("x", dataset(), domain(), spp(), years())
+    biomass_server("x", dataset(), domain(), spp(), years())
+    lenfreq_server("x", dataset(), domain(), spp())
   })
 
   output$data_table <- renderTable({
