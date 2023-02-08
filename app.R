@@ -22,40 +22,31 @@ source("mod-lenfreq.R")
 
 
 ui <-
-  navbarPage("NCRMP Atlantic Fish", collapsible = TRUE, inverse = TRUE, theme = bs_theme(bootswatch = "sketchy"),
+  navbarPage("NCRMP Atlantic Fish", collapsible = TRUE, inverse = TRUE, theme = bs_theme(bootswatch = "solar"),
              # Home panel ----
              tabPanel("Home",
-                      # parent container
-                      tags$div(class="landing-wrapper",
-                               
-                               # child element 1: images
-                               tags$div(class="landing-block background-content",
-                                        
-                                        # top left
-                                        img(src="stingray.jpg"),
-                                        
-                                        # top right
-                                        img(src="HYGE.jpg"),
-                                        
-                                        # bottom left
-                                        img(src="Angel2.jpg"), 
-                                        
-                                        # bottom right
-                                        
-                                        img(src="Judge.jpg")
-                                        
-                               ),
-                               
-                               # child element 2: content
-                               tags$div(class="landing-block foreground-content",
-                                        tags$div(class="foreground-text",
-                                                 tags$h1("Welcome"),
-                                                 tags$p("This shiny application 
-                                                        analyzes fish data from the
-                                                        Gulf", actionLink("Atlantic", "Atlantic")),
-                                        )
-                               )
-                      )
+                    HTML('
+                          <section class="section-one"> 
+    <div class="container">
+      <h1>Landing Page</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <a href="" class="home-button">Read More</a>
+    </div>  
+  </section> 
+ 
+ <section class="section-two">
+    <div class="container-two">
+      <div class="container-two-content content">
+        <h1>Title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="container-two-content content-image">
+        <img src="HYGE.jpg">
+      </div>
+    </div>
+ </section>
+                         ')
              ),
              # Analysis Panel ---------
              tabPanel("Analysis",
@@ -87,12 +78,12 @@ ui <-
                                     tabsetPanel(
                                       tabPanel(
                                         "Plot",
-                                        fluidRow(
+                                        fluidRow(class = "plotRow",
                                           column(12,
-                                            density_ui("x")  
+                                            density_ui("x")
                                           )
                                         ),
-                                        fluidRow(
+                                        fluidRow(class = "plotRow",
                                           column(6,
                                             occurrence_ui("x")
                                           ),
@@ -100,7 +91,7 @@ ui <-
                                             biomass_ui("x")
                                           )
                                         ),
-                                        fluidRow(
+                                        fluidRow(class = "plotRow",
                                           column(12,
                                             lenfreq_ui("x")
                                           )
@@ -108,10 +99,10 @@ ui <-
                                       ),
                                       tabPanel("Map",
                                                fluidPage(
-                                                 fluidRow(
+                                                 fluidRow(class = "plotRow",
                                                    column(12,
                                                           tags$div(class = "mappage",
-                                                                   leafletOutput("mymap", width = "100%", height = 900)
+                                                                   leafletOutput("mymap", width = "100%", height = 600)
                                                           )
                                                    )
                                                  )
