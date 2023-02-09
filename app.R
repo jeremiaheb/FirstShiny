@@ -27,25 +27,25 @@ ui <-
              tabPanel("Home",
                     HTML('
                           <section class="section-one"> 
-    <div class="container">
-      <h1>Landing Page</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      <a href="" class="home-button">Read More</a>
-    </div>  
-  </section> 
+                            <div class="container">
+                              <h1>Landing Page</h1>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                              <a href="" class="home-button">Read More</a>
+                            </div>  
+                          </section> 
  
- <section class="section-two">
-    <div class="container-two">
-      <div class="container-two-content content">
-        <h1>Title</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-      <div class="container-two-content content-image">
-        <img src="HYGE.jpg">
-      </div>
-    </div>
- </section>
+                           <section class="section-two">
+                              <div class="container-two">
+                                <div class="container-two-content content">
+                                  <h1>Title</h1>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <div class="container-two-content content-image">
+                                  <img src="HYGE.jpg">
+                                </div>
+                              </div>
+                           </section>
                          ')
              ),
              # Analysis Panel ---------
@@ -146,12 +146,15 @@ ui <-
                         ))),
              # outreach panel ------
              tabPanel("Outreach",
-                      fluidPage(
+                        fluidRow(class = "timeln",
+                          column(12,
                         tags$iframe(src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1B-iclSukiIB36Ny4M5wEBNddu7U_3XoJFHE6mQAvfFA&font=Default&lang=en&initial_zoom=2&height=650',
                                     width='100%',
                                     height='650',
                                     frameborder='0')
-                      )
+                          )
+                        )
+                      
              ),
              # about panel --------
              tabPanel("About")
