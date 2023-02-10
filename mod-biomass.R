@@ -1,11 +1,5 @@
 biomass_ui <- function(id) {
-  
-  withSpinner(
-    plotOutput(NS(id, "biomassplot")),
-    type = 1,
-    color.background = "white",
-    hide.ui = TRUE
-  )
+  plotOutput(NS(id, "biomassplot"))
 }
 
 biomass_server <- function(id,data, domain, species, years) {

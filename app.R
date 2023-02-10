@@ -71,6 +71,7 @@ ui <-
                                                 choices = setNames(species$SPECIES_CD, species$search_name),
                                                 selected = "OCY CHRY"
                                     ),
+                                    checkboxGroupInput("selectedPlots", "Select Plots", choices = c("Density", "Occurrence", "Biomass", "lengthFreq")),
                                     actionButton("build", "Build Species Plots"),
                                     width = 2
                                   ),
@@ -84,12 +85,14 @@ ui <-
                                           )
                                         ),
                                         fluidRow(class = "plotRow",
-                                          column(6,
-                                            occurrence_ui("x")
-                                          ),
-                                          column(6,
-                                            biomass_ui("x")
-                                          )
+                                                 column(12,
+                                                        occurrence_ui("x")
+                                                 )
+                                        ),
+                                        fluidRow(class = "plotRow",
+                                                 column(12,
+                                                        biomass_ui("x")
+                                                 )
                                         ),
                                         fluidRow(class = "plotRow",
                                           column(12,
@@ -183,25 +186,48 @@ server <- function(input, output, session) {
   domain <- eventReactive(input$build, {
     input$domain  
   })
+  
+  selectedInputs <- eventReactive(input$build, {
+    input$selectedPlots
+  })
 
   dt <- reactiveValues()
       
+  observeEvent(input$build, {
+    
+    output[["x-densityplot"]] <- NULL
+    output[["x-occurrenceplot"]] <- NULL
+    output[["x-biomassplot"]] <- NULL
+    output[["x-lenfreqplot"]] <- NULL
+    
+    if(!is.null(selectedInputs())) {
+      
+      nplot<-length(selectedInputs())
+      x<-selectedInputs()
+
+      for (i in 1:nplot) {
+        if (x[[i]] == "Density") {
+          density_server("x", dataset(), domain(), spp(), years())
+        } else if (x[[i]] == "Occurrence") {
+          occurrence_server("x", dataset(), domain(), spp(), years())
+        } else if (x[[i]] == "Biomass") {
+           biomass_server("x", dataset(), domain(), spp(), years())
+        } else if (x[[i]] == "lengthFreq") {
+          lenfreq_server("x", dataset(), domain(), spp())
+        }
+      }
+    }
+  })
+      
   output$mymap <- renderLeaflet({
     sites = dataset()$sample_data %>% filter(YEAR == max(dataset()$sample_data$YEAR)) %>% group_by(REGION, YEAR, PRIMARY_SAMPLE_UNIT, STATION_NR) %>% summarise(lat = mean(LAT_DEGREES), lon = mean(LON_DEGREES))
-      leaflet(sites) %>%
+    leaflet(sites) %>%
       addProviderTiles(providers$Esri.WorldImagery) %>%
       addMarkers(lng = ~lon, lat = ~lat,
                  popup = ~PRIMARY_SAMPLE_UNIT)
-                 # popup = paste0("<img src = HYGE.jpg width=100 height=100>"))
+    # popup = paste0("<img src = HYGE.jpg width=100 height=100>"))
   })
-
-  observeEvent(input$build, {
-    density_server("x", dataset(), domain(), spp(), years())
-    occurrence_server("x", dataset(), domain(), spp(), years())
-    biomass_server("x", dataset(), domain(), spp(), years())
-    lenfreq_server("x", dataset(), domain(), spp())
-  })
-
+  
   output$data_table <- renderTable({
     observeEvent(input$whichMetric, {
       dt[[input$whichMetric]]

@@ -1,11 +1,5 @@
 occurrence_ui <- function(id) {
-  
-  withSpinner(
-    plotOutput(NS(id, "occurrenceplot")),
-    type = 1,
-    color.background = "white",
-    hide.ui = TRUE
-  )
+  plotOutput(NS(id, "occurrenceplot"))
 }
 
 occurrence_server <- function(id,data, domain, species, years) {
