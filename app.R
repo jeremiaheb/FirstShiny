@@ -6,6 +6,8 @@ library(shinythemes)
 library(shinyWidgets)
 library(leaflet)
 library(bslib)
+library(geojsonio)
+library(shinyjs)
 
 myFiles <- list.files("plots/", pattern = "*.R", full.names = T)
 sapply(myFiles, source)
@@ -19,7 +21,8 @@ source("mod-occurrence.R")
 source("mod-biomass.R")
 source("mod-lenfreq.R")
 
-
+keys_spas <- geojson_read("Data/fkeys_spas.geojson", what = "sp")
+keys_domain <- geojson_read("Data/keys_domain.geojson", what = "sp")
 
 ui <-
   navbarPage("NCRMP Atlantic Fish", collapsible = TRUE, inverse = TRUE, theme = bs_theme(bootswatch = "solar"),
@@ -51,6 +54,7 @@ ui <-
              # Analysis Panel ---------
              tabPanel("Analysis",
                       fluidPage(tags$head(tags$link(rel = "stylesheet", type = "text/css", href = "app.css")),
+                                useShinyjs(),
                                 titlePanel("Fish"),
                                 sidebarLayout(
                                   sidebarPanel(
@@ -71,13 +75,14 @@ ui <-
                                                 choices = setNames(species$SPECIES_CD, species$search_name),
                                                 selected = "OCY CHRY"
                                     ),
+                                    radioButtons("selectedArea", "Select part of Domain", choices = c("All Domain", "Open vs Protected", "Strata")),
                                     checkboxGroupInput("selectedPlots", "Select Plots", choices = c("Density", "Occurrence", "Biomass", "lengthFreq")),
                                     actionButton("build", "Build Species Plots"),
                                     width = 2
                                   ),
                                   mainPanel(
                                     tabsetPanel(
-                                      tabPanel(
+                                      tabPanel(class = "analysisPlots",
                                         "Plot",
                                         fluidRow(class = "plotRow",
                                           column(12,
@@ -85,14 +90,14 @@ ui <-
                                           )
                                         ),
                                         fluidRow(class = "plotRow",
-                                                 column(12,
-                                                        occurrence_ui("x")
-                                                 )
+                                            column(12,
+                                              occurrence_ui("x")
+                                          )
                                         ),
                                         fluidRow(class = "plotRow",
-                                                 column(12,
-                                                        biomass_ui("x")
-                                                 )
+                                            column(12,
+                                              biomass_ui("x")
+                                          )
                                         ),
                                         fluidRow(class = "plotRow",
                                           column(12,
@@ -190,42 +195,79 @@ server <- function(input, output, session) {
   selectedInputs <- eventReactive(input$build, {
     input$selectedPlots
   })
+  
+  selectedArea <- eventReactive(input$build, {
+    input$selectedArea
+  })
 
   dt <- reactiveValues()
       
   observeEvent(input$build, {
-    
     output[["x-densityplot"]] <- NULL
     output[["x-occurrenceplot"]] <- NULL
     output[["x-biomassplot"]] <- NULL
     output[["x-lenfreqplot"]] <- NULL
+    addClass("x-densityplot", "noPlot")
+    addClass("x-occurrenceplot", "noPlot")
+    addClass("x-biomassplot", "noPlot")
+    addClass("x-lenfreqplot", "noPlot")
     
     if(!is.null(selectedInputs())) {
       
       nplot<-length(selectedInputs())
       x<-selectedInputs()
-
+      a<-selectedArea()
       for (i in 1:nplot) {
-        if (x[[i]] == "Density") {
+        if (x[[i]] == "Density" && a == "All Domain") {
           density_server("x", dataset(), domain(), spp(), years())
-        } else if (x[[i]] == "Occurrence") {
+          removeClass("x-densityplot", "noPlot")
+        } else if (x[[i]] == "Density" && a == "Open vs Protected") {
+          density_prot_server("x", dataset(), domain(), spp(), years())
+          removeClass("x-densityplot", "noPlot")
+          
+        } else if (x[[i]] == "Occurrence" && a == "All Domain") {
           occurrence_server("x", dataset(), domain(), spp(), years())
-        } else if (x[[i]] == "Biomass") {
-           biomass_server("x", dataset(), domain(), spp(), years())
+          removeClass("x-occurrenceplot", "noPlot")
+        } else if (x[[i]] == "Occurrence" && a == "Open vs Protected") {
+          occurrence_prot_server("x", dataset(), domain(), spp(), years())
+          removeClass("x-occurrenceplot", "noPlot")
+          
+        } else if (x[[i]] == "Biomass" && a == "All Domain") {
+          biomass_server("x", dataset(), domain(), spp(), years())
+          removeClass("x-biomassplot", "noPlot")
+        } else if (x[[i]] == "Biomass" && a == "Open vs Protected") {
+          biomass_prot_server("x", dataset(), domain(), spp(), years())
+          removeClass("x-biomassplot", "noPlot")
+          
         } else if (x[[i]] == "lengthFreq") {
           lenfreq_server("x", dataset(), domain(), spp())
+          removeClass("x-lenfreqplot", "noPlot")
         }
       }
+      
     }
   })
       
   output$mymap <- renderLeaflet({
     sites = dataset()$sample_data %>% filter(YEAR == max(dataset()$sample_data$YEAR)) %>% group_by(REGION, YEAR, PRIMARY_SAMPLE_UNIT, STATION_NR) %>% summarise(lat = mean(LAT_DEGREES), lon = mean(LON_DEGREES))
-    leaflet(sites) %>%
-      addProviderTiles(providers$Esri.WorldImagery) %>%
-      addMarkers(lng = ~lon, lat = ~lat,
-                 popup = ~PRIMARY_SAMPLE_UNIT)
+    # leaflet(sites) %>%
+    #   addProviderTiles(providers$Esri.WorldImagery) %>%
+    #   addMarkers(lng = ~lon, lat = ~lat,
+    #              popup = ~PRIMARY_SAMPLE_UNIT)
     # popup = paste0("<img src = HYGE.jpg width=100 height=100>"))
+    leaflet() %>%
+      addProviderTiles(providers$Esri.OceanBasemap) %>%
+      addPolygons(data = keys_domain, stroke = FALSE,
+                  color = "black",
+                  popup = paste0('<div class="modal-content">
+                                   <p>Some text in the Popup</p>
+                                  </div>')) %>%
+      addPolygons(data = keys_spas, stroke = 0.5,
+                  color = "blue",
+                  popup = paste0("<img src = HYGE.jpg width=100 height=100>")) %>%
+      addMarkers(data = sites, 
+                 lng = ~lon, lat = ~lat, 
+                 popup = ~PRIMARY_SAMPLE_UNIT)
   })
   
   output$data_table <- renderTable({

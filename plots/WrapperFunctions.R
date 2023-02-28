@@ -19,9 +19,7 @@ plot_domain_den_by_year <- function(dataset, species, years, title = NULL, print
 }
 
 plot_domain_den_by_year_by_prot <- function(dataset, species, years, title = NULL, print_dataframe = FALSE) {
-  
-  a <-  getDomainDensity(dataset, species, years, merge_protected = F) %>%
-    filter(!protected_status == "all") %>%
+  a <-  getDomainDensity(dataset, species, years = years, merge_protected = F) %>%
     mutate( SE   = sqrt(var),
             YEAR = as_factor(YEAR),
             protected_status = as_factor(protected_status))
@@ -35,7 +33,7 @@ plot_domain_den_by_year_by_prot <- function(dataset, species, years, title = NUL
                   size = 0.5) + 
     ggtitle(title) + 
     theme_Publication(base_size = 20) +
-    scale_colour_Publication() +
+    scale_color_Publication() +
     xlab("Year") + ylab("Density ind/177m2")
   
   ifelse(isTRUE(print_dataframe), print(list(a,p)), print(p))
@@ -87,10 +85,9 @@ plot_domain_occ_by_year <- function(dataset, species, years, title = NULL, print
   ifelse(isTRUE(print_dataframe), print(list(a,p)), print(p))
 }
 
-plot_domain_occ_by_year_by_prot <- function(dataset, species, title = NULL, print_dataframe = FALSE) {
+plot_domain_occ_by_year_by_prot <- function(dataset, species, years, title = NULL, print_dataframe = FALSE) {
   
-  a <-  getDomainOccurrence(dataset, species, merge_protected = F) %>%
-    filter(!protected_status == "all") %>%
+  a <-  getDomainOccurrence(dataset, species, years = years, merge_protected = F) %>%
     mutate( SE   = sqrt(var),
             YEAR = as_factor(YEAR),
             protected_status = as_factor(protected_status))
@@ -104,6 +101,7 @@ plot_domain_occ_by_year_by_prot <- function(dataset, species, title = NULL, prin
                   size = 0.5) + 
     ggtitle(title) + 
     theme_Publication(base_size = 20) +
+    scale_color_Publication() +
     xlab("Year") + ylab("Occurrence")
   
   # print(list(a,p))
@@ -155,9 +153,9 @@ plot_domain_biomass_by_year <- function(dataset, species, years, title = NULL, p
   ifelse(isTRUE(print_dataframe), print(list(a,p)), print(p))
 }
 
-plot_domain_biomass_by_year_by_prot <- function(dataset, species, title = NULL, print_dataframe = FALSE) {
+plot_domain_biomass_by_year_by_prot <- function(dataset, species, years, title = NULL, print_dataframe = FALSE) {
   
-  a <-  getDomainBiomass(dataset, species, merge_protected = F) %>%
+  a <-  getDomainBiomass(dataset, species, years = years, merge_protected = F) %>%
     filter(!protected_status == "all") %>%
     mutate( SE   = sqrt(var),
             YEAR = as_factor(YEAR),
@@ -172,7 +170,7 @@ plot_domain_biomass_by_year_by_prot <- function(dataset, species, title = NULL, 
                   size = 0.5) + 
     ggtitle(title) + 
     theme_Publication(base_size = 20) +
-    scale_colour_Publication() +
+    scale_color_Publication() +
     xlab("Year") + ylab("biomass kg/177m2")
   
   ifelse(isTRUE(print_dataframe), print(list(a,p)), print(p))

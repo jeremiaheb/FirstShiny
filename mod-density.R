@@ -9,7 +9,20 @@ density_server <- function(id, data, domain, species, years) {
         dataset = data,
         species = species,
         years = seq(years[1], years[2]),
-        merge_protected = FALSE,
+        print_dataframe = T,
+        title = paste(domain, species)
+      )
+    })
+  )
+}
+
+density_prot_server <- function(id, data, domain, species, years) {
+  moduleServer(id, function(input, output, session)
+    output$densityplot <- renderPlot({
+      a <- plot_domain_den_by_year_by_prot(
+        dataset = data,
+        species = species,
+        years = seq(years[1], years[2]),
         print_dataframe = T,
         title = paste(domain, species)
       )

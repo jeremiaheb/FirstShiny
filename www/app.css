@@ -184,5 +184,8 @@ footer {
     opacity: 85%;
 }
 
+.noPlot {
+  display: none;
+}
 
 
